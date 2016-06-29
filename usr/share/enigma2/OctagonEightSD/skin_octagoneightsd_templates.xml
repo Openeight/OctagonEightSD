@@ -18,4 +18,16 @@
         <convert type="ClockToText">Format:%A</convert>
       </widget>
 	</screen>
+	
+	<screen name="Clock2">	
+      <eLabel backgroundColor="dark" position="978,17" size="300,40" transparent="0" zPosition="-13" foregroundColor="OE_Background" />
+      <eLabel backgroundColor="white" position="976,15" size="304,44" transparent="0" zPosition="-14" />
+      <widget backgroundColor="OE_Background" font="Regular; 40" halign="left" position="1155,8" render="Label" size="115,50" source="global.CurrentTime" transparent="1" valign="top">
+        <convert type="ClockToText">Format:%H:%M</convert>
+      </widget>
+      <widget backgroundColor="OE_Background" font="Regular; 19" halign="right" position="980,23" render="Label" size="165,32" source="global.CurrentTime" transparent="1">
+        <convert type="ClockToText">Format:%A, %e. %b</convert>
+      </widget>	
+	</screen>
+	
 </skin>

@@ -88,13 +88,6 @@
     <font filename="/usr/share/enigma2/OctagonEightSD/fonts/OpenSans-Regular.ttf" name="RegularLight" scale="95" />
     <font filename="/usr/share/enigma2/OctagonEightSD/fonts/OpenSans-Regular.ttf" name="EL_Standard" scale="100" />
     <font filename="/usr/share/enigma2/OctagonEightSD/fonts/XHD.ttf" name="FHD" scale="100" />
-    <alias name="ChoiceList" font="FHD" size="22" height="34" />
-    <alias name="Body" font="FHD" size="22" height="34" />
-    <alias name="TextNormal" font="FHD" size="22" height="34" />
-    <alias name="FileList" font="FHD" size="22" height="34"/>
-    <alias name="FileListMulti" font="FHD" size="22" height="34"/>
-    <alias name="PlayList" font="FHD" size="22" height="34"/>
-    <alias name="SelectionList" font="FHD" size="22" height="34"/>	
   </fonts>
   <subtitles>
     <sub font="Regular;30" name="Subtitle_TTX" shadowColor="#40101010" shadowOffset="3,3" />
@@ -1183,7 +1176,7 @@
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/epg.png" position="796,5" size="60,60" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget backgroundColor="OE_Background3" font="Regular; 24" position="13,20" render="OE_Title" size="770,40" source="Title" transparent="1" />
-    <widget backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="34" name="list" position="20,75" scrollbarMode="showNever" serviceInfoFont="Regular;22" serviceItemHeight="34" serviceNameFont="FHD;24" serviceNumberFont="FHD;24" size="800,578" transparent="1" />
+    <widget backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="34" name="list" position="20,75" scrollbarMode="showNever" serviceInfoFont="Regular;24" serviceItemHeight="34" serviceNameFont="FHD;24" serviceNumberFont="FHD;24" size="800,578" transparent="1" />
     <widget alphatest="blend" position="940,160" render="OE_XPicon" size="220,132" source="ServiceEvent" transparent="1" zPosition="2">
       <convert type="OE_RefString">ServicelistRef</convert>
     </widget>
@@ -2481,9 +2474,10 @@
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/input.png" position="385,21" size="60,60" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget render="Label" source="Title" position="25,33" size="300,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
-    <widget name="text" font="FHD; 22" backgroundColor="OE_Background" position="85,86" size="900,374" transparent="1" />
-    <eLabel backgroundColor="white" name="" position="85,470" size="900,2" zPosition="-9" />
-    <widget name="input" font="FHD; 22" position="85,480" size="900,200" backgroundColor="OE_Background" transparent="1" />
+    <widget name="text" font="FHD; 22" backgroundColor="OE_Background" position="85,85" size="900,35" transparent="1" />
+    <eLabel backgroundColor="white" name="" position="85,126" size="900,2" zPosition="-9" />
+    <widget name="input" font="Regular; 22" position="85,135" size="900,40" backgroundColor="OE_Background" transparent="1" />
+    <widget name="help_text" font="Regular; 22" position="85,225" size="900,40" backgroundColor="OE_Background" transparent="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>

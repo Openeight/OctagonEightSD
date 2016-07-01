@@ -30,4 +30,19 @@
       </widget>	
 	</screen>
 	
+	<!-- BACKGROUND TEMPLATES -->
+	<screen name="Background1">
+      <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="center,center" size="1256,696" zPosition="-15" />
+      <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,15" size="274,44" zPosition="-12" />
+      <eLabel backgroundColor="white" position="center,center" size="1260,700" zPosition="-20" />
+      <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,17" size="270,40" zPosition="-11" valign="center" />	
+	</screen>
+	
+	<screen name="Background2">
+      <eLabel backgroundColor="white" position="70,center" size="930,684" zPosition="-20" />
+      <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="72,center" size="926,680" zPosition="-15" />
+      <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,30" size="654,44" zPosition="-12" />
+      <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,32" size="650,40" zPosition="-11" valign="center" />
+	</screen>	
+		
 </skin>

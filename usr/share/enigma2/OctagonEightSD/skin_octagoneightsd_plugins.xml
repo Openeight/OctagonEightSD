@@ -1277,6 +1277,161 @@
     <widget name="durum" font="Regular; 22" backgroundColor="OE_Background" position="25,645" size="1200,35" transparent="1" />
     <!-- Clock -->
     <panel name="Clock2" />
+  </screen>
+  
+  <!-- Fritz Call -->
+  <screen name="FritzCallSetup" title="FritzCallSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
+    <!-- Backgrounds -->
+    <panel name="Background2" />
+    <!-- Page Title / Widget -->
+    <widget render="Label" source="Title" position="25,33" size="620,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+    <widget name="consideration" position="85,85" size="900,35" font="FHD; 22" backgroundColor="OE_Background" transparent="1" />
+    <eLabel backgroundColor="white" name="" position="85,125" size="900,2" zPosition="-9" />
+    <widget name="config" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,135" size="900,510" transparent="1" />
+    <!-- Button - Bar -->
+    <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_menu.png" position="940,665" size="45,30" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_info.png" position="943,37" size="45,30" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="300,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_yellow.png" position="515,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="730,665" size="25,25" />
+    <widget name="key_red" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="115,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_yellow" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="545,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_blue" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="760,665" size="180,25" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="FritzDisplayCalls" title="Fritz Display Calls" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
+    <!-- Backgrounds -->
+    <panel name="Background2" />
+    <!-- Page Title / Widget -->
+    <widget render="Label" source="Title" position="25,33" size="620,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+    <widget name="statusbar" position="85,85" size="900,35" font="FHD; 22" backgroundColor="OE_Background" transparent="1" />
+    <eLabel backgroundColor="white" name="" position="85,125" size="900,2" zPosition="-9" />
+    <widget source="entries" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="85,135" size="900,510" zPosition="3" transparent="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+			MultiContentEntryText(pos = (10,0),size = (150,35),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
+			MultiContentEntryPixmapAlphaTest(pos = (160,5),size = (25,25),png = 2),# index 1 i direction pixmap
+			MultiContentEntryText(pos = (200,0),size = (300,35),flags = RT_HALIGN_LEFT,text = 3),# index 2 is remote name/number
+			MultiContentEntryText(pos = (510,0),size = (90,35),flags = RT_HALIGN_LEFT,text = 4),# index 3 is length of call
+			MultiContentEntryText(pos = (610,0),size = (280,35),flags = RT_HALIGN_CENTER,text = 5),# index 4 is my number/name for number
+			],
+			"fonts": [gFont("FHD",22)],
+			"itemHeight": 35
+			}
+		</convert>
+    </widget>
+    <!-- Button - Bar -->
+    <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_ok.png" position="940,665" size="45,30" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="300,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_yellow.png" position="515,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="730,665" size="25,25" />
+    <widget name="key_red" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="115,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_yellow" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="545,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_blue" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="760,665" size="180,25" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="FritzDisplayPhonebook" title="Fritz Display Phonebook" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
+    <!-- Backgrounds -->
+    <panel name="Background2" />
+    <!-- Page Title / Widget -->
+    <widget render="Label" source="Title" position="25,33" size="620,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+    <widget source="entries" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,85" size="900,544" zPosition="3" transparent="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+			MultiContentEntryText(pos = (10,0),size = (440,34),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the name,index 1 is shortname
+			MultiContentEntryText(pos = (460,0),size = (440,34),flags = RT_HALIGN_LEFT,text = 2),# index 2 is number
+			],
+			"fonts": [gFont("FHD",22)],
+			"itemHeight": 35
+			}
+		</convert>
+    </widget>
+    <!-- Button - Bar -->
+    <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_ok.png" position="940,665" size="45,30" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="300,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_yellow.png" position="515,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="730,665" size="25,25" />
+    <widget name="key_red" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="115,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_yellow" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="545,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_blue" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="760,665" size="180,25" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="AddScreen" title="Add Screen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
+    <!-- Backgrounds -->
+    <panel name="Background2" />
+    <!-- Page Title / Widget -->
+    <widget render="Label" source="Title" position="25,33" size="620,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+    <widget name="config" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,85" size="900,544" transparent="1" />
+    <!-- Button - Bar -->
+    <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="300,665" size="25,25" />
+    <widget name="key_red" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="115,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="FritzMenu" title="Fritz Menu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
+    <!-- Backgrounds -->
+    <panel name="Background2" />
+    <!-- Page Title / Widget -->
+    <widget render="Label" source="Title" position="25,33" size="620,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+    <widget name="FBFInfo" font="FHD; 22" backgroundColor="OE_Background" position="135,85" size="850,90" transparent="1" />
+    <widget name="FBFInternet" font="FHD; 22" backgroundColor="OE_Background" position="135,180" size="850,90" transparent="1" />
+    <widget name="FBFDsl" font="FHD; 22" backgroundColor="OE_Background" position="135,280" size="850,35" transparent="1" />
+    <widget name="FBFWlan" font="FHD; 22" backgroundColor="OE_Background" position="135,325" size="850,35" transparent="1" />
+    <widget name="FBFRufuml" font="FHD; 22" backgroundColor="OE_Background" position="135,370" size="850,35" transparent="1" />
+    <widget name="FBFFax" font="FHD; 22" backgroundColor="OE_Background" position="135,415" size="850,35" transparent="1" />
+    <widget name="FBFDect" font="FHD; 22" backgroundColor="OE_Background" position="135,460" size="850,35" transparent="1" />
+    <widget name="FBFGast" font="FHD; 22" backgroundColor="OE_Background" position="135,505" size="850,35" transparent="1" />
+    <widget name="internet_active" pixmap="OctagonEightSD/buttons/green.png" size="25,25" position="100,185" alphatest="blend" />
+    <widget name="internet_inactive" pixmap="OctagonEightSD/buttons/grey.png" size="25,25" position="100,185" alphatest="blend" />
+    <widget name="dsl_active" pixmap="OctagonEightSD/buttons/green.png" size="25,25" position="100,285" alphatest="blend" />
+    <widget name="dsl_inactive" pixmap="OctagonEightSD/buttons/grey.png" size="25,25" position="100,285" alphatest="blend" />
+    <widget name="wlan_active" pixmap="OctagonEightSD/buttons/green.png" size="25,25" position="100,330" alphatest="blend" />
+    <widget name="wlan_inactive" pixmap="OctagonEightSD/buttons/grey.png" size="25,25" position="100,330" alphatest="blend" />
+    <widget name="rufuml_active" pixmap="OctagonEightSD/buttons/green.png" size="25,25" position="100,375" alphatest="blend" />
+    <widget name="rufuml_inactive" pixmap="OctagonEightSD/buttons/grey.png" size="25,25" position="100,375" alphatest="blend" />
+    <widget name="fax_active" pixmap="OctagonEightSD/buttons/green.png" size="25,25" position="100,420" alphatest="blend" />
+    <widget name="fax_inactive" pixmap="OctagonEightSD/buttons/grey.png" size="25,25" position="100,420" alphatest="blend" />
+    <widget name="dect_active" pixmap="OctagonEightSD/buttons/green.png" size="25,25" position="100,465" alphatest="blend" />
+    <widget name="dect_inactive" pixmap="OctagonEightSD/buttons/grey.png" size="25,25" position="100,465" alphatest="blend" />
+    <widget name="gast_active" pixmap="OctagonEightSD/buttons/green.png" size="25,25" position="100,510" alphatest="blend" />
+    <widget name="gast_inactive" pixmap="OctagonEightSD/buttons/grey.png" size="25,25" position="100,510" alphatest="blend" />
+    <!-- Button - Bar -->
+    <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="300,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_yellow.png" position="515,665" size="25,25" />
+    <widget name="key_red" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="115,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_yellow" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="545,665" size="180,25" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="FritzAbout" title="About Fritz Call" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
+    <!-- Backgrounds -->
+    <panel name="Background2" />
+    <!-- Page Title / Widget -->
+    <widget render="Label" source="Title" position="25,33" size="620,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+    <widget name="text" font="FHD; 22" backgroundColor="OE_Background" position="85,85" size="900,250" transparent="1" />
+    <widget name="url" font="FHD; 22" backgroundColor="OE_Background" position="85,340" size="900,35" transparent="1" />
+    <ePixmap position="810,475" size="175,175" zPosition="4" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/FritzCall/images/website.png" alphatest="blend" />
+    <ePixmap position="600,500" size="150,110" zPosition="4" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/FritzCall/images/fritz.png" alphatest="blend" />
+    <!-- Clock -->
+    <panel name="Clock1" />
   </screen>  
   
 </skin>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v1.5a for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v1.6a for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -88,6 +88,14 @@
     <font filename="/usr/share/enigma2/OctagonEightSD/fonts/OpenSans-Regular.ttf" name="RegularLight" scale="95" />
     <font filename="/usr/share/enigma2/OctagonEightSD/fonts/OpenSans-Regular.ttf" name="EL_Standard" scale="100" />
     <font filename="/usr/share/enigma2/OctagonEightSD/fonts/XHD.ttf" name="FHD" scale="100" />
+    <alias name="ChoiceList" font="FHD" size="22" height="34" />
+    <alias name="Body" font="FHD" size="22" height="34" />
+    <alias name="TextNormal" font="FHD" size="22" height="34" />
+    <alias name="FileList" font="FHD" size="22" height="34"/>
+    <alias name="FileListMulti" font="FHD" size="22" height="34"/>
+    <alias name="PlayList" font="FHD" size="22" height="34"/>
+    <alias name="HelpMenuList" font="FHD" size="22" height="34"/>
+    <alias name="SelectionList" font="FHD" size="22" height="34"/>	
   </fonts>
   <subtitles>
     <sub font="Regular;30" name="Subtitle_TTX" shadowColor="#40101010" shadowOffset="3,3" />
@@ -139,6 +147,7 @@
     <parameter name="ChoicelistIcon" value="10,0,45,34" />
     <parameter name="PlayListName" value="40,0,800,36" />
     <parameter name="PlayListIcon" value="10,8,16,16" />
+    <parameter name="HelpMenuListHlp" value="10, 0, 800, 34" />
     <parameter name="FileListName" value="68,-1,800,34" />
     <parameter name="FileListIcon" value="5,0,25,25" />
     <parameter name="SelectionListDescr" value="45,-1,1000,34" />
@@ -1555,6 +1564,41 @@
     <widget source="key_green" render="Label" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
+  </screen>
+  <screen name="CutListEditor" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
+    <!-- Backgrounds -->
+    <panel name="Background1" />
+    <!-- Background2 -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="547,137" size="702,383" zPosition="-13" />
+    <eLabel backgroundColor="white" position="545,135" size="706,387" zPosition="-14" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Cutlist editor" position="15,18" size="250,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+    <eLabel position="550,140" zPosition="3" size="696,377" backgroundColor="unff000000" />
+    <eLabel position="550,140" zPosition="1" size="696,377" backgroundColor="white" />
+    <widget name="Video" position="550,140" zPosition="-10" size="696,377" />
+    <widget source="session.CurrentService" render="Label" position="548,530" size="700,45" font="FHD; 26" backgroundColor="OE_Background" transparent="1" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="548,578" size="700,45" font="FHD; 26" backgroundColor="OE_Background" transparent="1" halign="center">
+      <convert type="ServicePosition">Position,Detailed</convert>
+    </widget>
+    <widget name="Timeline" position="548,630" size="700,20" font="FHD; 22" backgroundColor="un808888" pointer="skin_default/position_arrow.png:3,5" transparent="1" />
+    <widget source="cutlist" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="24,139" size="500,520" zPosition="3">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos=(10,0), size=(380, 35), text = 1, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3)),
+						MultiContentEntryText(pos=(390,0), size=(110, 35), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
+					],
+				 "fonts": [gFont("FHD", 22)],
+				 "itemHeight": 35
+				}
+			</convert>
+    </widget>
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="22,137" size="504,524" zPosition="-12" />
+    <eLabel backgroundColor="white" position="20,135" size="508,528" zPosition="-14" />
+    <ePixmap pixmap="OctagonEightSD/mmp/mp_buttons.png" position="770,662" size="260,32" alphatest="blend" />
+    <!-- Clock -->
+    <panel name="Clock2" />
   </screen>
   <screen name="CCcamInfoMain" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <!-- Backgrounds -->

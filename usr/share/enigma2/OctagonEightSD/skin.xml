@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v1.7a for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v1.7b for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -4605,38 +4605,29 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
-  <screen name="UnhandledKey" title="UnhandledKey" backgroundColor="transparent" flags="wfNoBorder" position="center,18" size="340,70" transparent="0" zPosition="10">
+  <screen name="UnhandledKey" title="UnhandledKey" backgroundColor="transparent" flags="wfNoBorder" position="center,20" size="76,76" transparent="0" zPosition="10">
     <!-- Background -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="42,12" size="286,46" zPosition="-45" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,16" size="225,37" zPosition="-12" />
-    <eLabel backgroundColor="white" position="40,10" size="290,50" zPosition="-50" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,18" size="221,33" zPosition="-11" valign="center" />
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="3,3" size="70,70" zPosition="-45" />
+    <eLabel backgroundColor="white" position="0,0" size="76,76" zPosition="-50" />
     <!-- Page Title / Widget -->
-    <eLabel text="Unsupported" backgroundColor="dark" font="FHD; 24" position="10,15" size="230,35" transparent="1" valign="center" zPosition="0" />
-    <ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="OctagonEightSD/my_icons/unhandled_key.png" position="245,0" size="70,70" transparent="1" zPosition="-1" />
+    <ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="OctagonEightSD/my_icons/unhandled_key.png" position="3,3" size="70,70" transparent="1" zPosition="-1" />
   </screen>
-  <screen name="Volume" title="Volume" backgroundColor="transparent" flags="wfNoBorder" position="center,18" size="530,70" transparent="0" zPosition="10">
+  <screen name="Volume" title="Volume" backgroundColor="transparent" flags="wfNoBorder" position="center,20" size="386,61" transparent="0" zPosition="10">
     <!-- Background -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="42,12" size="486,46" zPosition="-45" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,16" size="145,37" zPosition="-12" />
-    <eLabel backgroundColor="white" position="40,10" size="490,50" zPosition="-50" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,18" size="141,33" zPosition="-11" valign="center" />
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="3,3" size="380,55" zPosition="-45" />
+    <eLabel backgroundColor="white" position="0,0" size="386,61" zPosition="-50" />
     <!-- Page Title / Widget -->
-    <eLabel backgroundColor="dark" font="FHD; 24" position="10,15" size="130,35" transparent="1" valign="center" zPosition="0" text="Volume" />
-    <ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="OctagonEightSD/my_icons/volume1.png" position="145,8" size="50,55" transparent="1" zPosition="-1" />
-    <widget name="Volume" pixmap="OctagonEightSD/colors/00A4C400.png" position="190,32" size="250,7" transparent="1" zPosition="3" />
-    <eLabel backgroundColor="OE_Foreground" position="190,34" size="250,3" />
-    <widget render="OE_Volume" backgroundColor="OE_Background" font="FHD;26" foregroundColor="OE_Foreground" halign="center" position="442,12" size="85,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="20" />
+    <ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="OctagonEightSD/my_icons/volume1.png" position="2,3" size="50,55" transparent="1" zPosition="-1" />
+    <widget name="Volume" pixmap="OctagonEightSD/my_icons/volume2.png" position="47,27" size="250,7" transparent="1" zPosition="3" />
+    <eLabel backgroundColor="OE_Foreground" position="48,29" size="248,3" />
+    <widget render="OE_Volume" backgroundColor="OE_Background" font="FHD;26" foregroundColor="OE_Foreground" halign="center" position="297,7" size="85,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="20" />
   </screen>
-  <screen name="Mute" title="Mute" backgroundColor="transparent" flags="wfNoBorder" position="center,18" size="340,70" transparent="0" zPosition="10">
+  <screen name="Mute" title="Mute" backgroundColor="transparent" flags="wfNoBorder" position="center,20" size="85,61" transparent="0" zPosition="10">
     <!-- Background -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="42,12" size="286,46" zPosition="-45" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,16" size="225,37" zPosition="-12" />
-    <eLabel backgroundColor="white" position="40,10" size="290,50" zPosition="-50" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,18" size="221,33" zPosition="-11" valign="center" />
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="3,3" size="79,55" zPosition="-45" />
+    <eLabel backgroundColor="white" position="0,0" size="85,61" zPosition="-50" />
     <!-- Page Title / Widget -->
-    <eLabel text="Mute" backgroundColor="dark" font="FHD; 24" position="10,15" size="230,35" transparent="1" valign="center" zPosition="0" />
-    <ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="OctagonEightSD/my_icons/mute2.png" position="250,8" size="79,55" transparent="1" zPosition="-1" />
+    <ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="OctagonEightSD/my_icons/mute2.png" position="3,3" size="79,55" transparent="1" zPosition="-1" />
   </screen>
   <screen name="VideoEnhancementPreview" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <!-- Backgrounds -->
@@ -5248,7 +5239,7 @@
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,30" size="454,44" zPosition="-12" />
     <eLabel backgroundColor="white" position="70,center" size="930,684" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,32" size="450,40" zPosition="-11" valign="center" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update.png" position="385,21" size="60,60" transparent="1" zPosition="10" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="385,21" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/open_eight.png" position="770,30" size="213,40" transparent="1" zPosition="10" />
     <!-- Backgrounds 2 -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="852,211" size="400,300" zPosition="-5" />

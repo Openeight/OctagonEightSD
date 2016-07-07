@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v1.6a for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v1.7a for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -2995,7 +2995,7 @@
     <eLabel text="Network Configuration..." position="25,33" size="355,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
     <widget source="Statustext" render="Label" font="FHD; 22" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="485,37" size="135,34" transparent="1" />
     <widget source="IF" render="Label" font="FHD; 22" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="625,37" size="200,34" transparent="1" />
-    <widget name="statuspic" alphatest="blend" pixmaps="OctagonEightSD/skin_default/lock_on.png,OctagonEightFHD/skin_default/lock_off.png" position="825,42" size="24,24" transparent="1" />
+    <widget name="statuspic" alphatest="blend" pixmaps="OctagonEightSD/skin_default/lock_on.png,OctagonEightSD/skin_default/lock_off.png" position="825,42" size="24,24" transparent="1" />
     <widget name="menulist" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,85" size="900,408" transparent="1" />
     <eLabel backgroundColor="white" name="" position="85,565" size="900,2" zPosition="-9" />
     <widget source="description" render="Label" font="Regular; 20" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="85,575" size="900,65" transparent="1" />
@@ -3627,12 +3627,13 @@
   </screen>
   <screen backgroundColor="OE_Selection" name="OSDScreenPosition" position="0,0" size="1280,720" zPosition="-1">
     <!-- Page Title / Widget -->
-    <widget name="config" itemHeight="34" font="FHD; 22" backgroundColor="OE_Background" position="center,center" size="500,300" zPosition="3" transparent="1" />
+    <widget name="config" itemHeight="34" font="Regular; 24" backgroundColor="dark" position="center,center" size="500,300" zPosition="3" transparent="0" />
+    <eLabel backgroundColor="white" position="center,center" size="504,304" zPosition="-5" />
     <!-- Button - Bar -->
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="390,600" size="25,25" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="center,600" size="25,25" />
-    <widget name="cancel" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="420,600" size="180,25" transparent="1" zPosition="1" />
-    <widget name="ok" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="657,600" size="180,25" transparent="1" zPosition="1" />
+    <widget name="cancel" backgroundColor="dark" font="Regular; 20" halign="left" position="420,600" size="200,25" transparent="0" zPosition="1" />
+    <widget name="ok" backgroundColor="dark" font="Regular; 20" halign="left" position="657,600" size="200,25" transparent="0" zPosition="1" />
   </screen>
   <screen name="PacketManager" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <!-- Backgrounds -->

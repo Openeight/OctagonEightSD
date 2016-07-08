@@ -2744,47 +2744,47 @@
     <panel name="Clock1" />
   </screen>
   <screen name="MediaPlayer" title="MediaPlayer" backgroundColor="transparent" borderColor="transparent" borderWidth="0" flags="wfNoBorder" position="center,center" size="1280,720" transparent="0">
-    <!-- Backgrounds -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="22,center" size="926,680" zPosition="-15" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,30" size="304,44" zPosition="-12" />
-    <eLabel backgroundColor="white" position="20,center" size="930,684" zPosition="-20" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,32" size="300,40" zPosition="-11" valign="center" />
-    <!-- Background 2 -->
-    <eLabel backgroundColor="OE_Background" position="847,232" size="416,419" zPosition="-13" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="845,230" size="420,423" zPosition="-14" />
-    <eLabel backgroundColor="dark" position="847,87" size="416,129" zPosition="-13" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="845,85" size="420,133" zPosition="-14" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,332" size="300,40" zPosition="-11" valign="center" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,330" size="304,44" zPosition="-12" />
-    <!-- Page Title / Widget -->
-    <eLabel text="Media Player" position="25,33" size="200,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
-    <eLabel text="Playlist" position="25,333" size="200,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
-    <widget name="filelist" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" position="34,80" size="800,238" transparent="1" />
-    <widget name="playlist" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" position="32,386" size="800,306" transparent="1" />
-    <widget alphatest="blend" name="coverArt" pixmap="OctagonEightSD/mmp/media_player.png" position="975,475" size="160,160" transparent="1" />
-    <widget name="title" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="dark" font="Regular; 24" foregroundColor="OE_Foreground" halign="center" position="855,88" size="400,75" transparent="1" valign="center" />
-    <widget backgroundColor="dark" font="Regular; 24" foregroundColor="OE_Foreground" halign="left" noWrap="1" position="855,175" render="Label" size="120,40" source="session.CurrentService" transparent="1" zPosition="2">
-      <convert type="ServicePosition">Position,ShowHours</convert>
-    </widget>
-    <widget backgroundColor="dark" font="Regular; 28" foregroundColor="OE_Foreground" halign="right" noWrap="1" position="1135,175" render="Label" size="120,40" source="session.CurrentService" transparent="1" zPosition="2">
-      <convert type="ServicePosition">Length,ShowHours</convert>
-    </widget>
-    <widget pixmap="OctagonEightFHD/colors/00A4C400.png" backgroundColor="OE_Background" foregroundColor="xtRed" position="855,165" render="Progress" size="400,6" source="session.CurrentService" transparent="1" zPosition="1">
-      <convert type="ServicePosition">Position</convert>
-    </widget>
-    <eLabel backgroundColor="white" position="855,167" size="400,2" zPosition="-9" />
-    <widget name="albumtext" font="Regular; 20" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="center" position="855,240" size="400,35" transparent="1" valign="center" />
-    <widget name="year" font="Regular; 20" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="center" position="855,280" size="400,35" transparent="1" valign="center" />
-    <widget name="artist" font="Regular; 20" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="center" position="855,320" size="400,35" transparent="1" valign="center" />
-    <widget name="album" font="Regular; 20" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="center" position="855,360" size="400,35" transparent="1" valign="center" />
-    <widget name="genre" font="Regular; 20" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="center" position="855,400" size="400,35" transparent="1" valign="center" />
-    <widget alphatest="blend" name="repeat" pixmaps="OctagonEightSD/mmp/repeat_off.png,OctagonEightFHD/mmp/repeat_on.png" position="1030,178" size="49,35" transparent="1" />
-    <!-- Button - Bar -->
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_menu.png" position="845,665" size="45,30" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_help.png" position="900,665" size="45,30" />
-    <!-- Clock -->
-    <panel name="Clock1" />
-  </screen>
+  <!-- Backgrounds -->
+  <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="22,center" size="926,680" zPosition="-15" />
+  <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,30" size="304,44" zPosition="-12" />
+  <eLabel backgroundColor="white" position="20,center" size="930,684" zPosition="-20" />
+  <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,32" size="300,40" zPosition="-11" valign="center" />
+  <!-- Background 2 -->
+  <eLabel backgroundColor="OE_Background" position="847,232" size="416,419" zPosition="-13" />
+  <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="845,230" size="420,423" zPosition="-14" />
+  <eLabel backgroundColor="dark" position="847,87" size="416,129" zPosition="-13" />
+  <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="845,85" size="420,133" zPosition="-14" />
+  <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,332" size="300,40" zPosition="-11" valign="center" />
+  <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,330" size="304,44" zPosition="-12" />
+  <!-- Page Title / Widget -->
+  <eLabel text="Media Player" position="25,33" size="200,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+  <eLabel text="Playlist" position="25,333" size="200,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+  <widget name="filelist" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" position="34,80" size="800,238" transparent="1" />
+  <widget name="playlist" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" position="32,386" size="800,306" transparent="1" />
+  <widget alphatest="blend" name="coverArt" pixmap="OctagonEightSD/mmp/media_player.png" position="975,475" size="160,160" transparent="1" />
+  <widget name="title" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="dark" font="Regular; 24" foregroundColor="OE_Foreground" halign="center" position="855,88" size="400,75" transparent="1" valign="center" />
+  <widget backgroundColor="dark" font="Regular; 24" foregroundColor="OE_Foreground" halign="left" noWrap="1" position="855,175" render="Label" size="120,40" source="session.CurrentService" transparent="1" zPosition="2">
+    <convert type="ServicePosition">Position,ShowHours</convert>
+  </widget>
+  <widget backgroundColor="dark" font="Regular; 28" foregroundColor="OE_Foreground" halign="right" noWrap="1" position="1135,175" render="Label" size="120,40" source="session.CurrentService" transparent="1" zPosition="2">
+    <convert type="ServicePosition">Length,ShowHours</convert>
+  </widget>
+  <widget pixmap="OctagonEightFHD/colors/00A4C400.png" backgroundColor="OE_Background" foregroundColor="xtRed" position="855,165" render="Progress" size="400,6" source="session.CurrentService" transparent="1" zPosition="1">
+    <convert type="ServicePosition">Position</convert>
+  </widget>
+  <eLabel backgroundColor="white" position="855,167" size="400,2" zPosition="-9" />
+  <widget name="albumtext" font="Regular; 20" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="center" position="855,240" size="400,35" transparent="1" valign="center" />
+  <widget name="year" font="Regular; 20" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="center" position="855,280" size="400,35" transparent="1" valign="center" />
+  <widget name="artist" font="Regular; 20" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="center" position="855,320" size="400,35" transparent="1" valign="center" />
+  <widget name="album" font="Regular; 20" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="center" position="855,360" size="400,35" transparent="1" valign="center" />
+  <widget name="genre" font="Regular; 20" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="center" position="855,400" size="400,35" transparent="1" valign="center" />
+  <widget alphatest="blend" name="repeat" pixmaps="OctagonEightSD/mmp/repeat_off.png,OctagonEightFHD/mmp/repeat_on.png" position="1030,178" size="49,35" transparent="1" />
+  <!-- Button - Bar -->
+  <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_menu.png" position="845,665" size="45,30" />
+  <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_help.png" position="900,665" size="45,30" />
+  <!-- Clock -->
+  <panel name="Clock1" />
+</screen>
   <screen name="MoviePlayer" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1280,720">
     <!-- Template -->
     <eLabel backgroundColor="OE_Background" name="InfoBar" position="center,592" size="1216,100" zPosition="-11" />

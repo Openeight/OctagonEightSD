@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v1.7b for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v2.00 for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -1543,6 +1543,31 @@
     <!-- Page Title / Widget -->
     <eLabel text="Command execution..." position="25,33" size="420,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
     <widget name="text" font="Console; 18" backgroundColor="OE_Background" position="85,95" size="900,578" transparent="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="CommitInfo" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
+    <!-- Backgrounds -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="72,center" size="926,680" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,30" size="454,44" zPosition="-12" />
+    <eLabel backgroundColor="white" position="70,center" size="930,684" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,32" size="450,40" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/info.png" position="385,21" size="60,60" transparent="1" zPosition="10" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Commit Info" position="35,33" size="300,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/openeight.png" position="790,78" size="202,45" transparent="1" zPosition="10" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/open_eight.png" position="340,81" size="213,40" transparent="1" zPosition="10" />
+    <eLabel backgroundColor="white" name="" position="85,125" size="900,2" zPosition="-9" />
+    <eLabel text="Support for Openeight" position="85,80" size="260,42" font="FHD; 25" backgroundColor="OE_Background" transparent="1" />
+    <eLabel text="octagon-forum.eu" position="565,80" size="220,42" font="FHD; 25" backgroundColor="OE_Background" transparent="1" halign="right" />
+    <widget name="AboutScrollLabel" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="85,135" size="900,510" transparent="1" />
+    <!-- Button - Bar -->
+    <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/left.png" position="790,660" size="36,36" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/right.png" position="955,660" size="36,36" />
+    <widget name="key_red" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="115,665" size="180,25" transparent="1" zPosition="1" />
+    <eLabel text="Skin Commits" backgroundColor="OE_Background" font="Regular; 20" halign="center" position="820,665" size="140,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -5001,16 +5026,16 @@
     <panel name="Clock1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Extraspanel" title="XTA PANEL" position="center,center" size="1280,720" transparent="0">
-  <!-- Background -->
-  <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="72,center" size="686,676" zPosition="-15" />
-  <eLabel backgroundColor="white" position="70,center" size="690,680" zPosition="-20" />
-  <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,30" size="354,44" zPosition="-12" />
-  <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,32" size="350,40" zPosition="-11" valign="center" />
-  <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="280,21" size="60,60" transparent="1" zPosition="10" />
-  <!-- Page Title / Widget -->
-  <eLabel text="Eight Panel" backgroundColor="dark" font="EL_Standard; 22" position="25,30" size="245,40" transparent="1" valign="center" zPosition="3" halign="left" />
-  <widget source="list" render="Listbox" enableWrapAround="1" position="85,91" scrollbarMode="showNever" size="663,600" transparent="1" zPosition="3">
-    <convert type="TemplatedMultiContent">
+    <!-- Background -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="72,center" size="686,676" zPosition="-15" />
+    <eLabel backgroundColor="white" position="70,center" size="690,680" zPosition="-20" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,30" size="354,44" zPosition="-12" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,32" size="350,40" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="280,21" size="60,60" transparent="1" zPosition="10" />
+    <!-- Page Title / Widget -->
+    <eLabel text="Eight Panel" backgroundColor="dark" font="EL_Standard; 22" position="25,30" size="245,40" transparent="1" valign="center" zPosition="3" halign="left" />
+    <widget source="list" render="Listbox" enableWrapAround="1" position="85,91" scrollbarMode="showNever" size="663,600" transparent="1" zPosition="3">
+      <convert type="TemplatedMultiContent">
                   {"template": [
                               MultiContentEntryText(pos = (20, 0), size = (930, 40), font=0, text=0, color = 0x00ffffff, color_sel = 0x00ffffff), # text 1 is the menu_entry,
                               MultiContentEntryText(pos = (20, 40), size = (930, 35), font=1, text=2, color = 0x006AA6D4, color_sel = 0x00ffffff),# text 2 is the menu_enty_description
@@ -5019,11 +5044,11 @@
                              "itemHeight": 75
                                }
       </convert>
-  </widget>
-  <ePixmap alphatest="blend" pixmap="OctagonEightSD/open_eight.png" position="540,32" size="213,40" transparent="1" zPosition="10" />
-  <!-- Clock -->
-  <panel name="Clock1" />
-</screen>
+    </widget>
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/open_eight.png" position="540,32" size="213,40" transparent="1" zPosition="10" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
   <screen name="ScNewSelection" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <!-- Backgrounds -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="72,center" size="926,680" zPosition="-15" />
@@ -5276,11 +5301,9 @@
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="300,665" size="25,25" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_yellow.png" position="515,665" size="25,25" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="730,665" size="25,25" />
     <widget name="key_red" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="115,665" size="180,25" transparent="1" zPosition="1" />
     <widget name="key_green" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
-    <widget name="key_yellow" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="545,665" size="180,25" transparent="1" zPosition="1" />
-    <widget name="key_blue" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="760,665" size="180,25" transparent="1" zPosition="1" />
+    <eLabel text="Latest Commits" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="545,665" size="180,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -5929,4 +5952,5 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+  <!-- ### PLUGINS ### -->
 </skin>

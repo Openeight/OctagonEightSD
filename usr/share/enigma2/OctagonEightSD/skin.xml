@@ -95,7 +95,7 @@
     <alias name="FileListMulti" font="FHD" size="22" height="34"/>
     <alias name="PlayList" font="FHD" size="22" height="34"/>
     <alias name="HelpMenuList" font="FHD" size="22" height="34"/>
-    <alias name="SelectionList" font="FHD" size="22" height="34"/>
+    <alias name="SelectionList" font="FHD" size="22" height="34"/>	
   </fonts>
   <subtitles>
     <sub font="Regular;30" name="Subtitle_TTX" shadowColor="#40101010" shadowOffset="3,3" />
@@ -2829,9 +2829,9 @@
       <convert type="ServicePosition">Remaining</convert>
     </widget>
     <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="45,648" size="980,2" zPosition="-1" />
-    <widget pixmap="OctagonEightSD/colors/00A4C400.png" position="45,646" render="Progress" size="980,6" source="session.CurrentService" transparent="1" zPosition="2">
-      <convert type="ServicePosition">Position</convert>
-    </widget>
+    <widget pixmap="OctagonEightSD/colors/000F6EB2.png" position="45,646" render="Progress" size="980,6" source="session.CurrentService" transparent="1" zPosition="2">
+  <convert type="ServicePosition">Position</convert>
+</widget>
     <widget position="45,646" render="PositionGauge" size="980,6" source="session.CurrentService" transparent="1" zPosition="1">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
@@ -4559,7 +4559,7 @@
     <eLabel backgroundColor="white" position="center,center" size="750,350" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="118,197" size="450,40" zPosition="-11" valign="center" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/input.png" position="432,188" size="60,60" transparent="1" zPosition="10" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update.png" position="502,188" size="60,60" transparent="1" zPosition="10" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="502,188" size="60,60" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="Software Update..." backgroundColor="dark" font="EL_Standard; 24" position="150,198" size="250,35" transparent="1" valign="center" zPosition="3" halign="left" />
     <widget source="status" render="Label" backgroundColor="OE_Background" font="FHD; 22" foregroundColor="OE_Foreground" position="center,300" size="700,38" transparent="1" valign="top" />

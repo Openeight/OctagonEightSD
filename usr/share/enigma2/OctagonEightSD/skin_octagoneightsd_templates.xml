@@ -30,7 +30,32 @@
       </widget>	
 	</screen>
 	
+	<screen name="Clock3">	
+      <eLabel backgroundColor="dark" position="978,22" size="300,40" transparent="0" zPosition="-13" foregroundColor="OE_Background" />
+      <eLabel backgroundColor="white" position="976,20" size="304,44" transparent="0" zPosition="-14" />
+      <widget backgroundColor="OE_Background" font="Regular; 40" halign="left" position="1155,13" render="Label" size="115,50" source="global.CurrentTime" transparent="1" valign="top">
+        <convert type="ClockToText">Format:%H:%M</convert>
+      </widget>
+      <widget backgroundColor="OE_Background" font="Regular; 19" halign="right" position="980,28" render="Label" size="165,32" source="global.CurrentTime" transparent="1">
+        <convert type="ClockToText">Format:%A, %e. %b</convert>
+      </widget>
+    </screen>
+	
 	<!-- BACKGROUND TEMPLATES -->
+	<screen name="Background_menu">
+      <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="72,center" size="556,680" zPosition="-15" />
+      <eLabel backgroundColor="white" foregroundColor="OE_Background" name="" position="70,center" size="560,684" zPosition="-20" />
+      <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,32" size="506,48" zPosition="-11" />
+      <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,30" size="510,52" zPosition="-12" />
+	</screen>
+
+	<screen name="Background_0">
+      <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="72,center" size="926,680" zPosition="-15" />
+      <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,30" size="514,44" zPosition="-12" />
+      <eLabel backgroundColor="white" position="70,center" size="930,684" zPosition="-20" />
+      <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,32" size="510,40" zPosition="-11" valign="center" />
+	</screen>
+
 	<screen name="Background1">
       <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="center,center" size="1256,696" zPosition="-15" />
       <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,15" size="274,44" zPosition="-12" />

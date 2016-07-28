@@ -1958,7 +1958,11 @@
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/hdd.png" position="385,21" size="60,60" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="Select HDD" position="25,33" size="300,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
-    <widget name="hddlist" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,85" size="900,576" transparent="1" />
+    <widget name="hddlist" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,85" size="900,542" transparent="1" />
+    <!-- Button - Bar -->
+    <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_ok.png" position="860,664" size="54,30" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_exit.png" position="930,664" size="54,30" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -2512,7 +2516,7 @@
     <widget source="Title" render="Label" position="25,33" size="350,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
     <widget source="Adapter" render="Label" font="FHD; 22" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="485,37" size="500,34" transparent="1" />
     <widget name="config" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,85" size="900,238" transparent="1" />
-    <widget source="introduction" render="Label" position="245,333" size="300,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" text="Aktueller Einstellungen:" halign="right" />
+    <widget source="introduction" render="Label" position="245,333" size="300,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" halign="right" />
     <widget render="Label" source="IPtext" position="235,390" size="300,35" font="FHD; 22" backgroundColor="OE_Background" transparent="1" halign="right" />
     <widget render="Label" source="Netmasktext" position="235,430" size="300,35" font="FHD; 22" backgroundColor="OE_Background" transparent="1" halign="right" />
     <widget render="Label" source="Gatewaytext" position="235,470" size="300,35" font="FHD; 22" backgroundColor="OE_Background" transparent="1" halign="right" />
@@ -3777,10 +3781,10 @@
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="300,665" size="25,25" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_yellow.png" position="515,665" size="25,25" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="730,665" size="25,25" />
-    <widget name="key_red" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="115,665" size="180,25" transparent="1" zPosition="1" />
-    <widget name="key_green" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
-    <widget name="key_yellow" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="545,665" size="180,25" transparent="1" zPosition="1" />
-    <widget name="key_blue" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="760,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="red" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="115,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="green" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="yellow" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="545,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="blue" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="760,665" size="180,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>

@@ -2141,15 +2141,15 @@
   <screen name="Ipkg" title="Installing Software..." backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="center,622" size="1276,86" zPosition="-15" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,26" size="324,44" zPosition="-12" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,566" size="324,44" zPosition="-12" />
     <eLabel backgroundColor="white" position="center,620" size="1280,90" zPosition="-20" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,28" size="320,40" zPosition="-11" valign="center" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/input.png" position="250,19" size="60,60" transparent="1" zPosition="10" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,568" size="320,40" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/input.png" position="250,559" size="60,60" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
-    <eLabel text="Installing Software..." backgroundColor="dark" font="EL_Standard; 24" position="10,29" size="250,35" transparent="1" valign="center" zPosition="3" halign="left" />
-    <widget name="status" backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" position="40,675" size="600,32" transparent="1" valign="center" />
+    <eLabel text="Installing Software..." backgroundColor="dark" font="EL_Standard; 24" position="10,569" size="250,35" transparent="1" valign="center" zPosition="3" halign="left" />
+    <widget name="status" backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" position="40,675" size="800,32" transparent="1" valign="center" />
     <widget name="activityslider" borderColor="grey" borderWidth="1" backgroundColor="OE_Background" foregroundColor="blue" position="center,630" size="1200,15" transparent="1" />
-    <widget name="package" backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" position="640,675" size="600,32" transparent="1" valign="center" halign="right" />
+    <widget name="package" backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" position="440,675" size="800,32" transparent="1" valign="center" halign="right" />
     <widget name="slider" borderColor="grey" borderWidth="1" backgroundColor="OE_Background" foregroundColor="blue" position="center,655" size="1200,15" transparent="1" />
     <!-- CLOCK TEMPLATES -->
     <eLabel backgroundColor="OE_Background" position="1022,20" size="256,56" transparent="0" zPosition="-10" />
@@ -4130,18 +4130,18 @@
   <screen name="UpdatePlugin" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="center,622" size="1276,86" zPosition="-15" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,26" size="394,44" zPosition="-12" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,566" size="394,44" zPosition="-12" />
     <eLabel backgroundColor="white" position="center,620" size="1280,90" zPosition="-20" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,28" size="390,40" zPosition="-11" valign="center" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/input.png" position="250,19" size="60,60" transparent="1" zPosition="10" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="325,19" size="60,60" transparent="1" zPosition="10" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,568" size="390,40" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/input.png" position="250,559" size="60,60" transparent="1" zPosition="10" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="325,559" size="60,60" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
-    <eLabel text="Software Update..." backgroundColor="dark" font="EL_Standard; 24" position="10,29" size="230,35" transparent="1" valign="center" zPosition="3" halign="left" />
-    <widget source="status" render="Label" backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" position="640,675" size="600,32" transparent="1" valign="center" halign="right" />
+    <eLabel text="Software Update..." backgroundColor="dark" font="EL_Standard; 24" position="10,569" size="230,35" transparent="1" valign="center" zPosition="3" halign="left" />
+    <widget source="status" render="Label" backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" position="440,675" size="800,32" transparent="1" valign="center" halign="right" />
     <widget name="activityslider" borderColor="grey" borderWidth="1" backgroundColor="OE_Background" foregroundColor="blue" position="center,630" size="1200,15" transparent="1" />
-    <widget source="package" render="Label" backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" position="40,675" size="600,32" transparent="1" valign="center" halign="left" />
+    <widget source="package" render="Label" backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" position="40,675" size="800,32" transparent="1" valign="center" halign="left" />
     <widget name="slider" borderColor="grey" borderWidth="1" backgroundColor="OE_Background" foregroundColor="blue" position="center,655" size="1200,15" transparent="1" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/picon_default.png" position="35,530" size="220,90" transparent="1" zPosition="10" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/picon_default.png" position="1025,530" size="220,90" transparent="1" zPosition="10" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -5582,5 +5582,4 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
-  <!-- ### PLUGINS ### -->
 </skin>

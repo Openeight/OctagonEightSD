@@ -4470,7 +4470,7 @@
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="40,33" size="300,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
     <widget name="text" position="85,80" size="900,200" font="FHD; 24" backgroundColor="OE_Background" transparent="1" />
-    <widget source="languages" render="Listbox" itemHeight="50" scrollbarMode="showAlways" alphatest="blend" position="85,280" size="900,360" backgroundColor="OE_Background" transparent="1">
+    <widget source="languages" render="Listbox" itemHeight="50" scrollbarMode="showAlways" alphatest="blend" position="85,280" size="900,350" backgroundColor="OE_Background" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
 			MultiContentEntryText(pos = (110, 5), size = (500, 60), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,

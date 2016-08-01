@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v2.60a for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v2.61a for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -2883,7 +2883,7 @@
     <widget name="config" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,85" size="900,510" transparent="1" />
     <eLabel backgroundColor="white" name="" position="85,600" size="900,2" zPosition="-9" />
     <widget source="introduction" render="Label" position="85,608" size="900,35" font="FHD; 22" backgroundColor="OE_Background" transparent="1" />
-    <widget name="HelpWindow" position="765,645" size="1,1" zPosition="10" />
+    <widget name="HelpWindow" position="265,345" size="1,1" zPosition="10" />
     <!-- Button - Bar -->
     <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
@@ -2904,7 +2904,7 @@
     <widget source="config" render="Listbox" backgroundColor="OE_Background" scrollbarMode="showOnDemand" enableWrapAround="1" position="85,85" size="900,510" transparent="1">
       <convert type="TemplatedMultiContent">
                 {"template": [
-                        MultiContentEntryText(pos = (70,4),size = (1100,80),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
+                        MultiContentEntryText(pos = (70,4),size = (800,80),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
                         MultiContentEntryPixmapAlphaTest(pos = (10,1),size = (48,48),png = 3),# index 4 is the status pixmap
                         ],
                         "fonts": [gFont("FHD",24)],

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v2.62a for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v2.63a for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -2484,7 +2484,9 @@
     <eLabel text="MovieMenu" position="25,33" size="300,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
     <eLabel backgroundColor="white" name="" position="85,125" size="900,2" zPosition="-9" />
     <widget render="Label" source="Title" position="85,85" size="900,35" font="FHD; 22" backgroundColor="OE_Background" transparent="1" />
-    <widget name="menu" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,135" size="900,544" transparent="1" />
+    <widget source="menu" render="Listbox" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,135" size="900,544" transparent="1">
+      <convert type="StringList" />
+    </widget>
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>

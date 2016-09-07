@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v2.80 for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v2.85b for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -3813,10 +3813,10 @@
     <widget name="network" font="FHD; 22" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="175,85" size="800,35" transparent="1" valign="center" />
     <widget name="transponder" font="FHD; 22" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="175,125" size="800,35" transparent="1" valign="center" />
     <widget name="pass" font="FHD; 22" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="175,165" size="800,35" transparent="1" valign="center" />
-    <widget name="scan_state" font="FHD; 22" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="85,205" size="900,35" transparent="1" valign="center" />
-    <widget name="scan_progress" borderColor="grey" borderWidth="1" backgroundColor="OE_Background" foregroundColor="blue" position="85,245" size="900,15" transparent="1" />
-    <eLabel backgroundColor="white" name="" position="85,270" size="900,2" zPosition="-9" />
-    <widget name="servicelist" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="85,280" size="900,408" transparent="1" />
+    <widget name="scan_state" font="EL_Standard; 24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="85,205" size="900,40" transparent="1" valign="center" />
+    <widget name="scan_progress" borderColor="grey" borderWidth="1" backgroundColor="OE_Background" foregroundColor="blue" position="85,250" size="900,15" transparent="1" />
+    <eLabel backgroundColor="white" name="" position="85,275" size="900,2" zPosition="-9" />
+    <widget name="servicelist" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="85,285" size="900,408" transparent="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -5244,7 +5244,7 @@
 				}
 			</convert>
     </widget>
-    <widget source="menu" render="Listbox" foregroundColor="grey" position="1009,121" scrollbarMode="showNever" selectionDisabled="1" size="900,720" transparent="1" zPosition="5">
+    <widget source="menu" render="Listbox" foregroundColor="grey" position="85,204" scrollbarMode="showNever" selectionDisabled="1" size="900,720" transparent="1" zPosition="5">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 10), size = (690, 460), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,

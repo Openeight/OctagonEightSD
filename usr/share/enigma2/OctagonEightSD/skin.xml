@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v2.86 for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v2.86a for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -56,6 +56,7 @@
     <color name="un5678a4" value="#005678a4" />
     <color name="un56c856" value="#0056c856" />
     <color name="un666666" value="#00666666" />
+    <color name="un6aa6d4" value="#006aa6d4" />
     <color name="un800000" value="#00800000" />
     <color name="un808888" value="#00808888" />
     <color name="un888a8a8a" value="#888a8a8a" />
@@ -1157,6 +1158,29 @@
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
+  <screen name="ChangePasswdScreen" title="Root Change Password" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
+    <!-- Backgrounds -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="72,center" size="926,680" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,30" size="514,44" zPosition="-12" />
+    <eLabel backgroundColor="white" position="70,center" size="930,684" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,32" size="510,40" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/menu.png" position="448,21" size="60,60" transparent="1" zPosition="10" />
+    <!-- Page Title / Widget -->
+    <widget source="Title" render="Label" position="25,33" size="420,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+    <widget name="passwd" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,80" size="900,542" transparent="1" />
+    <!-- Button - Bar -->
+    <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="300,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_yellow.png" position="515,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="730,665" size="25,25" />
+    <widget source="key_red" render="Label" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="115,665" size="180,25" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="545,665" size="180,25" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="760,665" size="180,25" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
   <screen name="ChannelSelection" position="0,0" size="1280,720" backgroundColor="transparent" title="Channel Selection" flags="wfNoBorder">
     <!-- Backgrounds -->
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="center,center" size="1256,696" zPosition="-15" />
@@ -1183,7 +1207,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" backgroundColor="OE_Background" font="FHD; 26" halign="right" position="1115,584" size="140,35" transparent="1" foregroundColor="#6AA6D4">
+    <widget source="Event" render="Label" backgroundColor="OE_Background" font="EL_Standard; 26" halign="right" position="1115,584" size="140,35" transparent="1" foregroundColor="un6aa6d4">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>

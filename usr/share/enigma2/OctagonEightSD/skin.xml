@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v2.86a for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v2.90 for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -13,6 +13,7 @@
     <color name="background" value="#40000000" />
     <color name="black" value="#00000000" />
     <color name="blue" value="#000064c7" />
+    <color name="blue_light" value="#0044a2ff" />
     <color name="dark" value="#00294a6b" />
     <color name="dark_2" value="#3c294a6b" />
     <color name="darkgrey" value="#00999999" />
@@ -91,6 +92,7 @@
     <font filename="/usr/share/enigma2/OctagonEightSD/fonts/OpenSans-Regular.ttf" name="RegularLight" scale="95" />
     <font filename="/usr/share/enigma2/OctagonEightSD/fonts/OpenSans-Regular.ttf" name="EL_Standard" scale="100" />
     <font filename="/usr/share/enigma2/OctagonEightSD/fonts/XHD.ttf" name="FHD" scale="100" />
+    <font filename="/usr/share/enigma2/OctagonEightSD/fonts/SDBold.ttf" name="RegularBold" scale="100" />
     <alias name="ChoiceList" font="FHD" size="22" height="34" />
     <alias name="Body" font="FHD" size="22" height="34" />
     <alias name="TextNormal" font="FHD" size="22" height="34" />
@@ -176,10 +178,10 @@
     <widget alphatest="blend" position="26,571" render="OE_XPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget backgroundColor="OE_Background" font="FHD; 32" halign="left" noWrap="1" position="255,570" render="Label" size="865,48" source="session.Event_Now" transparent="1">
+    <widget backgroundColor="OE_Background" font="RegularBold; 32" halign="left" noWrap="1" position="255,570" render="Label" size="865,48" source="session.Event_Now" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 24" halign="right" position="1120,579" render="Label" size="125,38" source="session.Event_Now" transparent="1">
+    <widget backgroundColor="OE_Background" font="RegularBold; 24" halign="right" position="1120,579" render="Label" size="125,38" source="session.Event_Now" transparent="1">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
@@ -236,8 +238,8 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/hbbtv_off.png" position="980,674" size="45,23" zPosition="1" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/rec_off.png" position="760,674" size="45,23" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/rec_on.png" position="760,674" render="Pixmap" size="45,23" source="session.RecordState" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/rec_off.png" position="815,674" size="45,23" zPosition="1" />
+    <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/rec_on.png" position="815,674" render="Pixmap" size="45,23" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/sub_on.png" position="925,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
@@ -275,11 +277,11 @@
       <convert type="ServiceOrbitalPosition" />
     </widget>
     <eLabel text="SNR :" position="417,673" size="60,30" font="EL_Standard; 20" backgroundColor="OE_Background" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="460,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="Regular; 20" valign="center" zPosition="3">
+    <widget source="session.FrontendStatus" render="Label" position="460,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="Regular; 20" valign="center" zPosition="3" foregroundColor="blue_light">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <eLabel text="AGC :" position="526,673" size="60,30" font="EL_Standard; 20" backgroundColor="OE_Background" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="570,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="Regular; 20" valign="center" zPosition="3">
+    <widget source="session.FrontendStatus" render="Label" position="570,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="Regular; 20" valign="center" zPosition="3" foregroundColor="blue_light">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" halign="right" position="630,674" render="Label" size="55,30" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
@@ -289,8 +291,8 @@
     <widget backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" halign="left" position="705,674" render="Label" size="55,30" source="session.CurrentService" transparent="1" valign="top" zPosition="3">
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/ip_tv_off.png" position="815,674" size="45,23" zPosition="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="OctagonEightSD/my_icons/ip_tv.png" alphatest="blend" position="815,674" zPosition="3" size="45,23" transparent="1">
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/ip_tv_off.png" position="760,674" size="45,23" zPosition="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="OctagonEightSD/my_icons/ip_tv.png" alphatest="blend" position="760,674" zPosition="3" size="45,23" transparent="1">
       <convert type="ServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide">
       </convert>
@@ -299,192 +301,192 @@
     <panel name="Clock1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="1280,720" title="InfoBar">
-    <!-- Template -->
-    <eLabel backgroundColor="OE_Background" name="InfoBar" position="center,570" size="1236,134" zPosition="-11" />
-    <eLabel backgroundColor="OE_Foreground" name="" position="center,568" size="1240,138" zPosition="-20" foregroundColor="OE_Background" />
-    <eLabel backgroundColor="dark" foregroundColor="dark" name="" position="255,666" size="990,1" zPosition="-10" valign="center" />
-    <!-- Template -->
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,523" size="450,40" zPosition="-13" valign="center" />
-    <eLabel backgroundColor="dark" position="2,525" size="446,36" transparent="0" zPosition="-10" />
-    <!-- Widget -->
-    <widget source="session.CurrentService" render="ChannelNumber" backgroundColor="dark" foregroundColor="OE_Foreground" font="Regular; 22" halign="center" position="31,521" size="95,40" transparent="1" valign="center" zPosition="1" />
-    <widget source="session.CurrentService" render="Label" position="127,522" size="320,40" font="Regular; 22" noWrap="1" backgroundColor="dark" transparent="1" halign="left" valign="center">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget alphatest="blend" position="26,571" render="OE_XPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
-      <convert type="ServiceName">Reference</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="FHD; 32" halign="left" noWrap="1" position="255,570" render="Label" size="865,48" source="session.Event_Now" transparent="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 24" halign="right" position="1120,579" render="Label" size="125,38" source="session.Event_Now" transparent="1">
-      <convert type="EventTime">Remaining</convert>
-      <convert type="RemainingToText">InMinutes</convert>
-    </widget>
-    <widget pixmap="OctagonEightSD/colors/000F6EB2.png" position="255,619" render="Progress" size="990,6" source="session.Event_Now" transparent="1" zPosition="7">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 25" halign="right" noWrap="1" position="242,627" render="Label" size="75,38" source="session.Event_Next" transparent="1" valign="top" foregroundColor="grey">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <eLabel backgroundColor="OE_Background" font="Regular; 25" halign="center" noWrap="1" position="319,624" size="15,38" text="-" transparent="1" valign="top" foregroundColor="grey" />
-    <widget backgroundColor="OE_Background" font="Regular; 24" halign="left" noWrap="1" position="336,627" render="Label" size="75,38" source="session.Event_Next" transparent="1" valign="top" foregroundColor="grey">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 25" halign="left" position="415,627" render="Label" size="705,38" source="session.Event_Next" transparent="1" valign="top" foregroundColor="grey">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 24" halign="right" position="1120,628" render="Label" size="125,38" source="session.Event_Next" transparent="1" foregroundColor="grey">
-      <convert type="EventTime">Duration</convert>
-      <convert type="ClockToText">InMinutes</convert>
-    </widget>
-    <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="255,621" size="990,2" />
-    <!-- CryptoInfo -->
-    <!-- Icons -->
-    <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/hbbtv_on.png" position="980,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="10">
-      <convert type="ServiceInfo">HasHBBTV</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/dolby_off.png" position="1035,674" size="45,23" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/dolby_on.png" position="1035,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">IsMultichannel</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/format_off.png" position="1145,674" size="45,23" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/format_on.png" position="1145,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">IsWidescreen</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/txt_off.png" position="870,674" size="45,23" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/txt_on.png" position="870,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">HasTelext</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/hd_off.png" position="1090,674" size="45,23" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/hd_on.png" position="1090,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">721,1980</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/crypt_off.png" position="1200,674" size="45,23" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/crypt_on.png" position="1200,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">IsCrypted</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/hbbtv_off.png" position="980,674" size="45,23" zPosition="1" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/rec_off.png" position="760,674" size="45,23" zPosition="1" />
-    <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/rec_on.png" position="760,674" render="Pixmap" size="45,23" source="session.RecordState" zPosition="2">
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/sub_on.png" position="925,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">SubtitlesAvailable</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/sub_off.png" position="925,674" size="45,23" zPosition="1" />
-    <!-- TunerInfo -->
-    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="330,679" zPosition="2" size="16,16" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" foregroundColor="blue">
-      <convert type="TunerInfo">TunerUseMask</convert>
-      <convert type="ValueBitTest">1</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <eLabel text="A" position="332,681" zPosition="1" size="12,12" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
-    <widget source="session.TunerInfo" render="FixedLabel" position="351,679" zPosition="2" size="16,16" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" text="B" foregroundColor="blue">
-      <convert type="TunerInfo">TunerUseMask</convert>
-      <convert type="ValueBitTest">2</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <eLabel text="B" position="353,681" zPosition="1" size="12,12" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
-    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="372,679" zPosition="2" size="16,16" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" foregroundColor="blue">
-      <convert type="TunerInfo">TunerUseMask</convert>
-      <convert type="ValueBitTest">4</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <eLabel text="C" position="374,681" zPosition="1" size="12,12" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
-    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="393,679" zPosition="2" size="16,16" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" foregroundColor="blue">
-      <convert type="TunerInfo">TunerUseMask</convert>
-      <convert type="ValueBitTest">8</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <eLabel text="D" position="395,681" zPosition="1" size="12,12" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
-    <!-- SystemInfo -->
-    <widget source="session.CurrentService" render="Label" position="255,674" size="70,30" backgroundColor="OE_Background" transparent="1" zPosition="3" font="Regular; 20" valign="top" halign="left">
-      <convert type="ServiceOrbitalPosition" />
-    </widget>
-    <eLabel text="SNR :" position="417,673" size="60,30" font="EL_Standard; 20" backgroundColor="OE_Background" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="460,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="Regular; 20" valign="center" zPosition="3">
-      <convert type="FrontendInfo">SNR</convert>
-    </widget>
-    <eLabel text="AGC :" position="526,673" size="60,30" font="EL_Standard; 20" backgroundColor="OE_Background" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="570,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="Regular; 20" valign="center" zPosition="3">
-      <convert type="FrontendInfo">AGC</convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" halign="right" position="630,674" render="Label" size="55,30" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
-      <convert type="ServiceInfo">VideoWidth</convert>
-    </widget>
-    <eLabel backgroundColor="OE_Background" font="Regular; 18" halign="center" noWrap="1" position="685,674" size="20,30" text="x" transparent="1" valign="top" zPosition="2" />
-    <widget backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" halign="left" position="705,674" render="Label" size="55,30" source="session.CurrentService" transparent="1" valign="top" zPosition="3">
-      <convert type="ServiceInfo">VideoHeight</convert>
-    </widget>
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/ip_tv_off.png" position="815,674" size="45,23" zPosition="1" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="OctagonEightSD/my_icons/ip_tv.png" alphatest="blend" position="815,674" zPosition="3" size="45,23" transparent="1">
-      <convert type="ServiceInfo">IsStream</convert>
-      <convert type="ConditionalShowHide">
-      </convert>
-    </widget>
-    <!-- Clock -->
-    <panel name="Clock1" />
-    <!-- SECOND INFOBAR */ -->
-    <!-- Template -->
-    <eLabel backgroundColor="white" position="20,20" size="630,480" zPosition="-50" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,35" size="689,44" zPosition="-15" />
-    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,37" size="685,40" zPosition="-13" valign="center" />
-    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="670,148" size="570,1" zPosition="-12" />
-    <!-- Template -->
-    <!-- Tuner */ -->
-    <!-- Snr and Agc */ -->
-    <widget source="session.CurrentService" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="OE_RunningText" position="930,503" size="320,32" halign="right" font="Regular; 20" zPosition="4" transparent="1" backgroundColor="background" noWrap="1" valign="center" foregroundColor="foreground">
-      <convert type="OE_ServiceName">%s   %M   %F %p %Y %f</convert>
-    </widget>
-    <eLabel backgroundColor="OE_Background" name="InfoBar" position="22,22" size="626,476" zPosition="-48" />
-    <widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="OE_RunningText" position="34,85" size="600,384" font="Regular; 22" zPosition="1" backgroundColor="OE_Background" transparent="1" halign="left">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
-    <eLabel backgroundColor="OE_Background" name="ib2" position="662,112" size="596,426" zPosition="-35" />
-    <widget source="session.Event_Next" render="Label" position="670,113" size="75,35" font="Regular; 23" halign="left" backgroundColor="OE_Background" transparent="1" noWrap="1" valign="center">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget source="session.Event_Next" render="Label" position="731,113" size="85,35" font="Regular; 23" halign="left" backgroundColor="OE_Background" transparent="1" noWrap="1" valign="center">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
-    </widget>
-    <widget source="session.Event_Next" render="Label" position="1060,115" size="180,35" font="Regular; 23" halign="right" backgroundColor="OE_Background" transparent="1">
-      <convert type="EventTime">Duration</convert>
-      <convert type="ClockToText">InMinutes</convert>
-    </widget>
-    <widget source="session.Event_Next" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="OE_RunningText" position="670,155" size="580,339" font="Regular; 21" zPosition="1" backgroundColor="OE_Background" transparent="1" halign="left" foregroundColor="grey">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
-    <widget backgroundColor="dark" font="Regular; 23" halign="right" position="562,40" render="Label" size="120,35" source="session.Event_Now" transparent="1">
-      <convert type="EventTime">Remaining</convert>
-      <convert type="RemainingToText">InMinutes</convert>
-    </widget>
-    <widget backgroundColor="dark" font="Regular; 23" halign="left" noWrap="1" position="22,40" render="Label" size="540,35" source="session.Event_Now" transparent="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget pixmap="OctagonEightSD/colors/000F6EB2.png" borderColor="grey" borderWidth="1" position="34,480" render="Progress" size="600,12" source="session.Event_Now" transparent="1" zPosition="7">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-    <!-- SYSTEM INFO 2 */ -->
-    <widget source="session.CurrentService" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="OE_RunningText" position="670,503" size="260,32" halign="right" font="Regular; 20" zPosition="4" transparent="1" backgroundColor="background" noWrap="1" valign="center" foregroundColor="foreground">
-      <convert type="OE_ServiceName">Satellite</convert>
-    </widget>
-    <!-- New */ -->
-    <eLabel backgroundColor="white" name="ib2a" position="670,498" size="580,2" zPosition="20" />
-    <eLabel backgroundColor="white" name="ib2" position="660,110" size="600,430" zPosition="-40" />
-  </screen>
+  <!-- Template -->
+  <eLabel backgroundColor="OE_Background" name="InfoBar" position="center,570" size="1236,134" zPosition="-11" />
+  <eLabel backgroundColor="OE_Foreground" name="" position="center,568" size="1240,138" zPosition="-20" foregroundColor="OE_Background" />
+  <eLabel backgroundColor="dark" foregroundColor="dark" name="" position="255,666" size="990,1" zPosition="-10" valign="center" />
+  <!-- Template -->
+  <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,523" size="450,40" zPosition="-13" valign="center" />
+  <eLabel backgroundColor="dark" position="2,525" size="446,36" transparent="0" zPosition="-10" />
+  <!-- Widget -->
+  <widget source="session.CurrentService" render="ChannelNumber" backgroundColor="dark" foregroundColor="OE_Foreground" font="Regular; 22" halign="center" position="31,521" size="95,40" transparent="1" valign="center" zPosition="1" />
+  <widget source="session.CurrentService" render="Label" position="127,522" size="320,40" font="Regular; 22" noWrap="1" backgroundColor="dark" transparent="1" halign="left" valign="center">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget alphatest="blend" position="26,571" render="OE_XPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget backgroundColor="OE_Background" font="RegularBold; 32" halign="left" noWrap="1" position="255,570" render="Label" size="865,48" source="session.Event_Now" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget backgroundColor="OE_Background" font="RegularBold; 24" halign="right" position="1120,579" render="Label" size="125,38" source="session.Event_Now" transparent="1">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget pixmap="OctagonEightSD/colors/000F6EB2.png" position="255,619" render="Progress" size="990,6" source="session.Event_Now" transparent="1" zPosition="7">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget backgroundColor="OE_Background" font="Regular; 25" halign="right" noWrap="1" position="242,627" render="Label" size="75,38" source="session.Event_Next" transparent="1" valign="top" foregroundColor="grey">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <eLabel backgroundColor="OE_Background" font="Regular; 25" halign="center" noWrap="1" position="319,624" size="15,38" text="-" transparent="1" valign="top" foregroundColor="grey" />
+  <widget backgroundColor="OE_Background" font="Regular; 24" halign="left" noWrap="1" position="336,627" render="Label" size="75,38" source="session.Event_Next" transparent="1" valign="top" foregroundColor="grey">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget backgroundColor="OE_Background" font="Regular; 25" halign="left" position="415,627" render="Label" size="705,38" source="session.Event_Next" transparent="1" valign="top" foregroundColor="grey">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget backgroundColor="OE_Background" font="Regular; 24" halign="right" position="1120,628" render="Label" size="125,38" source="session.Event_Next" transparent="1" foregroundColor="grey">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+  <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="255,621" size="990,2" />
+  <!-- CryptoInfo -->
+  <!-- Icons -->
+  <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/hbbtv_on.png" position="980,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="10">
+    <convert type="ServiceInfo">HasHBBTV</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/dolby_off.png" position="1035,674" size="45,23" zPosition="1" />
+  <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/dolby_on.png" position="1035,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsMultichannel</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/format_off.png" position="1145,674" size="45,23" zPosition="1" />
+  <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/format_on.png" position="1145,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/txt_off.png" position="870,674" size="45,23" zPosition="1" />
+  <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/txt_on.png" position="870,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">HasTelext</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/hd_off.png" position="1090,674" size="45,23" zPosition="1" />
+  <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/hd_on.png" position="1090,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">VideoWidth</convert>
+    <convert type="ValueRange">721,1980</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/crypt_off.png" position="1200,674" size="45,23" zPosition="1" />
+  <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/crypt_on.png" position="1200,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsCrypted</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/hbbtv_off.png" position="980,674" size="45,23" zPosition="1" />
+  <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/rec_off.png" position="815,674" size="45,23" zPosition="1" />
+  <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/rec_on.png" position="815,674" render="Pixmap" size="45,23" source="session.RecordState" zPosition="2">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <widget alphatest="blend" pixmap="OctagonEightSD/my_icons/sub_on.png" position="925,674" render="Pixmap" size="45,23" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">SubtitlesAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/sub_off.png" position="925,674" size="45,23" zPosition="1" />
+  <!-- TunerInfo -->
+  <widget source="session.TunerInfo" render="FixedLabel" text="A" position="330,679" zPosition="2" size="16,16" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="A" position="332,681" zPosition="1" size="12,12" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
+  <widget source="session.TunerInfo" render="FixedLabel" position="351,679" zPosition="2" size="16,16" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" text="B" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="B" position="353,681" zPosition="1" size="12,12" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
+  <widget source="session.TunerInfo" render="FixedLabel" text="C" position="372,679" zPosition="2" size="16,16" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">4</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="C" position="374,681" zPosition="1" size="12,12" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
+  <widget source="session.TunerInfo" render="FixedLabel" text="D" position="393,679" zPosition="2" size="16,16" font="Regular; 30" halign="center" backgroundColor="blue" transparent="0" valign="center" foregroundColor="blue">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">8</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="D" position="395,681" zPosition="1" size="12,12" font="Regular; 30" halign="center" backgroundColor="OE_Foreground" transparent="0" valign="center" />
+  <!-- SystemInfo -->
+  <widget source="session.CurrentService" render="Label" position="255,674" size="70,30" backgroundColor="OE_Background" transparent="1" zPosition="3" font="Regular; 20" valign="top" halign="left">
+    <convert type="ServiceOrbitalPosition" />
+  </widget>
+  <eLabel text="SNR :" position="417,673" size="60,30" font="EL_Standard; 20" backgroundColor="OE_Background" transparent="1" halign="left" />
+  <widget source="session.FrontendStatus" render="Label" position="460,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="Regular; 20" valign="center" zPosition="3" foregroundColor="blue_light">
+    <convert type="FrontendInfo">SNR</convert>
+  </widget>
+  <eLabel text="AGC :" position="526,673" size="60,30" font="EL_Standard; 20" backgroundColor="OE_Background" transparent="1" halign="left" />
+  <widget source="session.FrontendStatus" render="Label" position="570,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="Regular; 20" valign="center" zPosition="3" foregroundColor="blue_light">
+    <convert type="FrontendInfo">AGC</convert>
+  </widget>
+  <widget backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" halign="right" position="630,674" render="Label" size="55,30" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
+    <convert type="ServiceInfo">VideoWidth</convert>
+  </widget>
+  <eLabel backgroundColor="OE_Background" font="Regular; 18" halign="center" noWrap="1" position="685,674" size="20,30" text="x" transparent="1" valign="top" zPosition="2" />
+  <widget backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" halign="left" position="705,674" render="Label" size="55,30" source="session.CurrentService" transparent="1" valign="top" zPosition="3">
+    <convert type="ServiceInfo">VideoHeight</convert>
+  </widget>
+  <ePixmap alphatest="blend" pixmap="OctagonEightSD/my_icons/ip_tv_off.png" position="760,674" size="45,23" zPosition="1" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="OctagonEightSD/my_icons/ip_tv.png" alphatest="blend" position="760,674" zPosition="3" size="45,23" transparent="1">
+    <convert type="ServiceInfo">IsStream</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+  <!-- Clock -->
+  <panel name="Clock1" />
+  <!-- SECOND INFOBAR */ -->
+  <!-- Template -->
+  <eLabel backgroundColor="white" position="20,20" size="630,480" zPosition="-50" />
+  <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,35" size="689,44" zPosition="-15" />
+  <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,37" size="685,40" zPosition="-13" valign="center" />
+  <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="670,148" size="570,1" zPosition="-12" />
+  <!-- Template -->
+  <!-- Tuner */ -->
+  <!-- Snr and Agc */ -->
+  <widget source="session.CurrentService" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="OE_RunningText" position="930,503" size="320,32" halign="right" font="Regular; 20" zPosition="4" transparent="1" backgroundColor="background" noWrap="1" valign="center" foregroundColor="foreground">
+    <convert type="OE_ServiceName">%s   %M   %F %p %Y %f</convert>
+  </widget>
+  <eLabel backgroundColor="OE_Background" name="InfoBar" position="22,22" size="626,476" zPosition="-48" />
+  <widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="OE_RunningText" position="34,85" size="600,384" font="Regular; 22" zPosition="1" backgroundColor="OE_Background" transparent="1" halign="left">
+    <convert type="EventName">ExtendedDescription</convert>
+  </widget>
+  <eLabel backgroundColor="OE_Background" name="ib2" position="662,112" size="596,426" zPosition="-35" />
+  <widget source="session.Event_Next" render="Label" position="670,113" size="75,35" font="Regular; 23" halign="left" backgroundColor="OE_Background" transparent="1" noWrap="1" valign="center">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="731,113" size="85,35" font="Regular; 23" halign="left" backgroundColor="OE_Background" transparent="1" noWrap="1" valign="center">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:- %H:%M</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="1060,115" size="180,35" font="Regular; 23" halign="right" backgroundColor="OE_Background" transparent="1">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+  <widget source="session.Event_Next" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="OE_RunningText" position="670,155" size="580,339" font="Regular; 21" zPosition="1" backgroundColor="OE_Background" transparent="1" halign="left" foregroundColor="grey">
+    <convert type="EventName">ExtendedDescription</convert>
+  </widget>
+  <widget backgroundColor="dark" font="Regular; 23" halign="right" position="562,40" render="Label" size="120,35" source="session.Event_Now" transparent="1">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget backgroundColor="dark" font="Regular; 23" halign="left" noWrap="1" position="22,40" render="Label" size="540,35" source="session.Event_Now" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget pixmap="OctagonEightSD/colors/000F6EB2.png" borderColor="grey" borderWidth="1" position="34,480" render="Progress" size="600,12" source="session.Event_Now" transparent="1" zPosition="7">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <!-- SYSTEM INFO 2 */ -->
+  <widget source="session.CurrentService" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="OE_RunningText" position="670,503" size="260,32" halign="right" font="Regular; 20" zPosition="4" transparent="1" backgroundColor="background" noWrap="1" valign="center" foregroundColor="foreground">
+    <convert type="OE_ServiceName">Satellite</convert>
+  </widget>
+  <!-- New */ -->
+  <eLabel backgroundColor="white" name="ib2a" position="670,498" size="580,2" zPosition="20" />
+  <eLabel backgroundColor="white" name="ib2" position="660,110" size="600,430" zPosition="-40" />
+</screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Menu" position="0,0" size="1280,720" title="Main menu" transparent="0">
     <panel name="Background_menu" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/menu.png" position="445,26" size="60,60" transparent="1" zPosition="10" />

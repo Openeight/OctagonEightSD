@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v3.00 for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v3.10 for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -276,11 +276,11 @@
       <convert type="ServiceOrbitalPosition" />
     </widget>
     <eLabel text="SNR :" position="417,673" size="60,30" font="EL_Standard; 20" backgroundColor="OE_Background" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="460,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="Regular; 20" valign="center" zPosition="3" foregroundColor="blue_light">
+    <widget source="session.FrontendStatus" render="Label" position="460,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="RegularBold; 20" valign="center" zPosition="3" foregroundColor="blue_light">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <eLabel text="AGC :" position="526,673" size="60,30" font="EL_Standard; 20" backgroundColor="OE_Background" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="570,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="Regular; 20" valign="center" zPosition="3" foregroundColor="blue_light">
+    <widget source="session.FrontendStatus" render="Label" position="570,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="RegularBold; 20" valign="center" zPosition="3" foregroundColor="blue_light">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" halign="right" position="630,674" render="Label" size="55,30" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
@@ -413,11 +413,11 @@
       <convert type="ServiceOrbitalPosition" />
     </widget>
     <eLabel text="SNR :" position="417,673" size="60,30" font="EL_Standard; 20" backgroundColor="OE_Background" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="460,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="Regular; 20" valign="center" zPosition="3" foregroundColor="blue_light">
+    <widget source="session.FrontendStatus" render="Label" position="460,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="RegularBold; 20" valign="center" zPosition="3" foregroundColor="blue_light">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <eLabel text="AGC :" position="526,673" size="60,30" font="EL_Standard; 20" backgroundColor="OE_Background" transparent="1" halign="left" />
-    <widget source="session.FrontendStatus" render="Label" position="570,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="Regular; 20" valign="center" zPosition="3" foregroundColor="blue_light">
+    <widget source="session.FrontendStatus" render="Label" position="570,672" size="60,30" backgroundColor="OE_Background" transparent="1" halign="right" font="RegularBold; 20" valign="center" zPosition="3" foregroundColor="blue_light">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Foreground" halign="right" position="630,674" render="Label" size="55,30" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
@@ -3352,7 +3352,13 @@
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/pin.png" position="385,21" size="60,60" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <eLabel text="Parental control setup" position="25,33" size="360,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
-    <widget name="config" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,85" size="900,578" transparent="1" />
+    <widget name="config" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,83" size="900,544" transparent="1" />
+    <!-- Button - Bar -->
+    <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="300,665" size="25,25" />
+    <widget source="key_red" render="Label" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="115,665" size="180,25" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>

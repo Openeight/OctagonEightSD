@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v3.50 for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v3.55 for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -671,10 +671,9 @@
     <eLabel text="Support for Openeight" position="85,83" size="260,42" font="FHD; 25" backgroundColor="OE_Background" transparent="1" />
     <eLabel text="octagon-forum.eu" position="565,84" size="220,42" font="FHD; 25" backgroundColor="OE_Background" transparent="1" halign="right" />
     <widget name="AboutScrollLabel" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="85,135" size="900,510" transparent="1" />
-    <widget name="boxpic" position="210,200" size="650,380" zPosition="10" alphatest="blend" transparent="1" />
-    <widget backgroundColor="OE_Background" font="Regular; 24" halign="left" position="464,35" size="300,35" name="Commits" transparent="1" zPosition="1" />
     <!-- Button - Bar -->
     <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_info.png" position="480,38" size="54,30" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="300,665" size="25,25" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_yellow.png" position="515,665" size="25,25" />
@@ -683,8 +682,48 @@
     <widget name="key_green" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
     <widget name="key_yellow" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="545,665" size="180,25" transparent="1" zPosition="1" />
     <widget name="key_blue" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="760,665" size="180,25" transparent="1" zPosition="1" />
+    <eLabel text="Translation Info" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="543,40" size="180,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
+  </screen>
+  <screen name="Troubleshoot" title="Troubleshoot - dmesg" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
+    <!-- Backgrounds -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="72,center" size="926,680" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,30" size="614,44" zPosition="-12" />
+    <eLabel backgroundColor="white" position="70,center" size="930,684" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,32" size="610,40" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/info.png" position="548,21" size="60,60" transparent="1" zPosition="10" />
+    <!-- Page Title / Widget -->
+    <widget source="Title" render="Label" position="25,33" size="520,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+    <widget name="AboutScrollLabel" font="Console; 28" backgroundColor="OE_Background" position="85,80" size="900,542" transparent="1" />
+    <!-- Button - Bar -->
+    <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/left.png" position="646,34" size="36,36" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/right.png" position="710,34" size="36,36" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/up.png" position="890,658" size="36,36" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/down.png" position="950,658" size="36,36" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="300,665" size="25,25" />
+    <widget name="key_red" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="115,665" size="180,25" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="330,665" size="180,25" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock1" />
+  </screen>
+  <screen name="ModelPic" title="ModelPic" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
+    <!-- Backgrounds -->
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="center,center" size="570,400" zPosition="-15" />
+    <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="295,170" size="224,44" zPosition="-12" />
+    <eLabel backgroundColor="white" position="center,center" size="574,404" zPosition="-20" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="297,172" size="220,40" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/info.png" position="450,161" size="60,60" transparent="1" zPosition="10" />
+    <!-- Page Title / Widget -->
+    <eLabel text="My Box" position="310,173" size="120,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
+    <widget name="model" backgroundColor="OE_Background" font="RegularBold; 22" foregroundColor="OE_Foreground" halign="left" position="540,173" size="370,40" transparent="1" valign="center" />
+    <widget name="boxpic" alphatest="blend" position="center,225" size="520,270" transparent="1" halign="center" valign="center" />
+    <!-- Button - Bar -->
+    <eLabel backgroundColor="white" name="" position="370,510" size="540,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="370,525" size="25,25" />
+    <widget name="key_blue" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="400,525" size="180,25" transparent="1" zPosition="1" />
   </screen>
   <screen name="AudioSelection" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <!-- Backgrounds -->
@@ -4227,9 +4266,15 @@
     <!-- Page Title / Widget -->
     <eLabel text="Skin Info" position="255,133" size="200,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
     <eLabel text="OctagonEight - HD 720p" font="FHD; 22" backgroundColor="OE_Background" halign="left" position="555,133" size="250,40" transparent="1" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/prev.png" position="center,center" size="280,210" transparent="1" zPosition="10" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/prev.png" position="center,185" size="280,210" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/openeight.png" position="767,552" size="202,45" transparent="1" zPosition="10" />
-    <eLabel text="style by SkinMania" font="Regular; 26" backgroundColor="OE_Background" halign="center" position="center,470" size="280,45" transparent="1" />
+    <eLabel text="style by SkinMania" font="Regular; 22" backgroundColor="OE_Background" halign="center" position="center,398" size="280,35" transparent="1" />
+
+    <eLabel text="OPEN SOURCE" font="RegularBold; 26" backgroundColor="OE_Background" halign="center" position="center,452" size="500,40" transparent="1" />
+    <eLabel text="https://github.com/Openeight" font="Regular; 18" backgroundColor="OE_Background" halign="center" position="center,487" size="500,35" transparent="1" />
+    <eLabel text="https://github.com/oe-alliance" font="Regular; 18" backgroundColor="OE_Background" halign="center" position="center,516" size="500,35" transparent="1" />
+
+
   </screen>
   <screen name="UpdatePlugin" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720" transparent="0">
     <!-- Background -->

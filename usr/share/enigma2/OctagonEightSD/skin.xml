@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v4.1a for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v4.20 for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -513,10 +513,11 @@
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Menu" position="0,0" size="1280,720" title="Main menu" transparent="0">
     <panel name="Background_menu" />
+    <eLabel backgroundColor="white" name="" position="92,650" size="510,2" zPosition="-9" foregroundColor="white" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/menu.png" position="445,26" size="60,60" transparent="1" zPosition="10" />
     <!-- Left Menu Content -->
     <widget backgroundColor="dark" font="Regular; 28" position="25,33" render="Label" size="420,45" source="title" transparent="1" halign="left" />
-    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,600" source="menu" transparent="1">
+    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,550" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (15, 0), size = (526, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 31)], 
@@ -524,15 +525,19 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="92,665" size="25,25" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="122,665" size="100,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_mainmenu" position="0,0" size="1280,720" title="Main menu" transparent="0">
     <panel name="Background_menu" />
+    <eLabel backgroundColor="white" name="" position="92,650" size="510,2" zPosition="-9" foregroundColor="white" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/menu.png" position="445,26" size="60,60" transparent="1" zPosition="10" />
     <!-- Left Menu Content -->
     <widget backgroundColor="dark" font="Regular; 28" position="25,33" render="Label" size="420,45" source="title" transparent="1" halign="left" />
-    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,600" source="menu" transparent="1">
+    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,550" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (15, 0), size = (526, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 31)], 
@@ -540,15 +545,19 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="92,665" size="25,25" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="122,665" size="100,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_system" position="0,0" size="1280,720" title="Main menu" transparent="0">
     <panel name="Background_menu" />
+    <eLabel backgroundColor="white" name="" position="92,650" size="510,2" zPosition="-9" foregroundColor="white" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/menu.png" position="445,26" size="60,60" transparent="1" zPosition="10" />
     <!-- Left Menu Content -->
     <widget backgroundColor="dark" font="Regular; 28" position="25,33" render="Label" size="420,45" source="title" transparent="1" halign="left" />
-    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,600" source="menu" transparent="1">
+    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,550" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (15, 0), size = (526, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 31)], 
@@ -556,15 +565,19 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="92,665" size="25,25" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="122,665" size="100,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1280,720" title="Main menu" transparent="0">
     <panel name="Background_menu" />
+    <eLabel backgroundColor="white" name="" position="92,650" size="510,2" zPosition="-9" foregroundColor="white" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/menu.png" position="445,26" size="60,60" transparent="1" zPosition="10" />
     <!-- Left Menu Content -->
     <widget backgroundColor="dark" font="Regular; 28" position="25,33" render="Label" size="420,45" source="title" transparent="1" halign="left" />
-    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,600" source="menu" transparent="1">
+    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,550" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (15, 0), size = (526, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 31)], 
@@ -572,15 +585,19 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="92,665" size="25,25" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="122,665" size="100,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_setup" position="0,0" size="1280,720" title="Main menu" transparent="0">
     <panel name="Background_menu" />
+    <eLabel backgroundColor="white" name="" position="92,650" size="510,2" zPosition="-9" foregroundColor="white" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/menu.png" position="445,26" size="60,60" transparent="1" zPosition="10" />
     <!-- Left Menu Content -->
     <widget backgroundColor="dark" font="Regular; 28" position="25,33" render="Label" size="420,45" source="title" transparent="1" halign="left" />
-    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,600" source="menu" transparent="1">
+    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,550" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (15, 0), size = (526, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 31)], 
@@ -588,15 +605,19 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="92,665" size="25,25" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="122,665" size="100,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_scan" position="0,0" size="1280,720" title="Main menu" transparent="0">
     <panel name="Background_menu" />
+    <eLabel backgroundColor="white" name="" position="92,650" size="510,2" zPosition="-9" foregroundColor="white" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/menu.png" position="445,26" size="60,60" transparent="1" zPosition="10" />
     <!-- Left Menu Content -->
     <widget backgroundColor="dark" font="Regular; 28" position="25,33" render="Label" size="420,45" source="title" transparent="1" halign="left" />
-    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,600" source="menu" transparent="1">
+    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,550" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (15, 0), size = (526, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 31)], 
@@ -604,15 +625,19 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="92,665" size="25,25" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="122,665" size="100,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" title="Main menu" transparent="0">
     <panel name="Background_menu" />
+    <eLabel backgroundColor="white" name="" position="92,650" size="510,2" zPosition="-9" foregroundColor="white" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/menu.png" position="445,26" size="60,60" transparent="1" zPosition="10" />
     <!-- Left Menu Content -->
     <widget backgroundColor="dark" font="Regular; 28" position="25,33" render="Label" size="420,45" source="title" transparent="1" halign="left" />
-    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,600" source="menu" transparent="1">
+    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,550" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (15, 0), size = (526, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 31)], 
@@ -620,15 +645,19 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="92,665" size="25,25" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="122,665" size="100,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_timermenu" position="0,0" size="1280,720" title="Main menu" transparent="0">
     <panel name="Background_menu" />
-    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/timer.png" position="445,26" size="60,60" transparent="1" zPosition="10" />
+    <eLabel backgroundColor="white" name="" position="92,650" size="510,2" zPosition="-9" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/menu.png" position="445,26" size="60,60" transparent="1" zPosition="10" />
     <!-- Left Menu Content -->
     <widget backgroundColor="dark" font="Regular; 28" position="25,33" render="Label" size="420,45" source="title" transparent="1" halign="left" />
-    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,600" source="menu" transparent="1">
+    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="510,550" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (15, 0), size = (526, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 31)], 
@@ -636,15 +665,19 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="92,665" size="25,25" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="122,665" size="100,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_harddisk" position="0,0" size="1280,720" title="Main menu" transparent="0">
     <panel name="Background_menu" />
+    <eLabel backgroundColor="white" name="" position="92,650" size="525,2" zPosition="-9" foregroundColor="white" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/menu.png" position="445,26" size="60,60" transparent="1" zPosition="10" />
     <!-- Left Menu Content -->
     <widget backgroundColor="dark" font="Regular; 28" position="25,33" render="Label" size="420,45" source="title" transparent="1" halign="left" />
-    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="525,600" source="menu" transparent="1">
+    <widget enableWrapAround="1" position="92,95" render="Listbox" scrollbarMode="showNever" size="525,550" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (15, 0), size = (526, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 31)], 
@@ -652,6 +685,9 @@
                    }
 		</convert>
     </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_blue.png" position="92,665" size="25,25" />
+    <eLabel text="MenuSort" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="122,665" size="100,25" transparent="1" zPosition="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -1193,14 +1229,14 @@
   </screen>
   <screen name="SelectBouquet" title="SelectBouquet" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <!-- Backgrounds -->
-    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="72,center" size="926,680" zPosition="-15" />
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="72,center" size="626,680" zPosition="-15" />
     <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="0,30" size="514,44" zPosition="-12" />
-    <eLabel backgroundColor="white" position="70,center" size="930,684" zPosition="-20" />
+    <eLabel backgroundColor="white" position="70,center" size="630,684" zPosition="-20" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="2,32" size="510,40" zPosition="-11" valign="center" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup.png" position="448,21" size="60,60" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget render="Label" source="Title" position="25,33" size="420,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
-    <widget name="menu" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,85" size="900,578" transparent="1" />
+    <widget name="menu" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,85" size="600,578" transparent="1" />
     <!-- Clock -->
     <panel name="Clock1" />
   </screen>
@@ -2439,8 +2475,13 @@
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup.png" position="530,21" size="60,60" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget render="Label" source="Title" position="25,33" size="500,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
-    <widget source="menu" render="Listbox" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="85,85" size="900,544" transparent="1">
-      <convert type="StringList" />
+    <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="85,85" size="530,550" transparent="1">
+      <convert type="TemplatedMultiContent">
+                   {"template": [ MultiContentEntryText(pos = (15, 0), size = (526, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
+                   "fonts": [gFont("FHD", 31)], 
+                   "itemHeight": 50
+                   }
+		</convert>
     </widget>
     <eLabel text="Move" position="798,36" size="150,40" font="Regular; 24" backgroundColor="OE_Background" transparent="1" halign="center" />
     <ePixmap alphatest="blend" pixmap="OctagonEightFHD/left.png" position="762,35" size="36,36" transparent="1" zPosition="10" />

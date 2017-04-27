@@ -107,10 +107,10 @@
       <convert type="EMCServicePosition">Remaining,Negate</convert>
     </widget>
     <eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="45,648" size="980,2" zPosition="-1" />
-    <widget pixmap="OctagonEightFHD/colors/000F6EB2.png" position="45,646" render="EMCPositionGauge" size="980,6" source="Service" transparent="1" zPosition="6">
+    <widget pixmap="OctagonEightSD/colors/000F6EB2.png" position="45,646" render="EMCPositionGauge" size="980,6" source="Service" transparent="1" zPosition="6">
       <convert type="EMCServicePosition">Gauge</convert>
     </widget>
-    <widget pointer="OctagonEightFHD/extensions/CoolPointer.png:1600,0" position="45,646" render="EMCPositionGauge" size="980,6" source="Service" transparent="1" zPosition="5">
+    <widget pointer="OctagonEightSD/extensions/CoolPointer.png:1600,0" position="45,646" render="EMCPositionGauge" size="980,6" source="Service" transparent="1" zPosition="5">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 20" foregroundColor="OE_Accent2" halign="right" name="chapterLabel" position="135,660" size="380,32" transparent="1" />

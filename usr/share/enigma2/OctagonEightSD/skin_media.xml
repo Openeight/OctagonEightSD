@@ -219,7 +219,7 @@
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/movie.png" position="585,21" size="60,60" transparent="1" zPosition="10" />
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="25,33" size="550,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
-    <widget name="playlist" itemHeight="34" posFont="Bold; 30" nameFont="Bold; 30" posWidth="60" nameWidth="810" posColor="white" posColorSel="white" nameColor="white" nameColorSel="white" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="85,85" size="900,544" transparent="1" />
+    <widget name="playlist" itemHeight="34" posFont="Bold; 20" nameFont="Bold; 20" posWidth="60" nameWidth="810" posColor="white" posColorSel="white" nameColor="white" nameColorSel="white" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="85,85" size="900,544" transparent="1" />
     <!-- Button - Bar -->
     <eLabel backgroundColor="white" name="" position="85,650" size="900,2" zPosition="-9" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="85,665" size="25,25" />
@@ -264,7 +264,7 @@
     <!-- Page Title / Widget -->
     <widget source="Title" render="Label" position="25,33" size="350,35" font="EL_Standard; 24" backgroundColor="dark" transparent="1" />
     <widget name="menulist" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,85" size="650,340" transparent="1" />
-    <widget name="poster" position="751,125" size="234,300" zPosition="4" alphatest="on" backgroundColor="EL_Background" />
+    <widget name="poster" position="751,125" size="234,300" zPosition="4" alphatest="on" backgroundColor="OE_Background" />
     <eLabel backgroundColor="white" name="" position="85,430" size="900,2" zPosition="-9" />
     <widget name="download" position="85,435" size="440,35" font="Regular; 20" backgroundColor="OE_Background" transparent="1" />
     <widget name="exist" position="545,475" size="440,35" font="Regular; 20" backgroundColor="OE_Background" transparent="1" />
@@ -341,7 +341,7 @@
     <widget name="movie_name" position="85,85" size="900,35" font="Regular; 20" backgroundColor="OE_Background" transparent="1" foregroundColor="green_light" />
     <eLabel backgroundColor="white" name="" position="85,130" size="900,2" zPosition="-9" />
     <widget name="movielist" itemHeight="34" font="FHD; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="85,140" size="900,442" transparent="1" />
-    <widget name="poster" position="1006,140" size="220,300" zPosition="4" alphatest="on" backgroundColor="EL_Background" />
+    <widget name="poster" position="1006,140" size="220,300" zPosition="4" alphatest="on" backgroundColor="OE_Background" />
     <eLabel backgroundColor="white" name="" position="85,600" size="900,2" zPosition="-9" />
     <widget name="resulttext" position="85,610" size="900,35" font="Regular; 20" backgroundColor="OE_Background" transparent="1" foregroundColor="green_light" />
     <!-- Button - Bar -->
@@ -408,7 +408,7 @@
     <widget name="movie_name" position="85,85" size="900,35" font="Regular; 20" backgroundColor="OE_Background" transparent="1" />
     <eLabel backgroundColor="white" name="" position="85,130" size="900,2" zPosition="-9" />
     <widget name="contenttxt" font="FHD; 22" backgroundColor="OE_Background" position="85,140" size="750,476" transparent="1" />
-    <widget name="previewcover" position="855,160" size="220,300" zPosition="4" alphatest="on" backgroundColor="EL_Background" />
+    <widget name="previewcover" position="855,160" size="220,300" zPosition="4" alphatest="on" backgroundColor="OE_Background" />
     <widget name="runtime" font="Regular; 20" backgroundColor="OE_Background" halign="left" position="855,470" size="200,35" transparent="1" />
     <widget name="runtimetxt" font="Regular; 20" backgroundColor="OE_Background" halign="left" position="1060,470" size="200,35" transparent="1" />
     <widget name="genre" font="Regular; 20" backgroundColor="OE_Background" halign="left" position="855,505" size="200,35" transparent="1" />

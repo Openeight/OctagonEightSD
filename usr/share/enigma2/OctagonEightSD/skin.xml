@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctagonEightSD Skin v6.5 for Octagon image, by SkinMania -->
+  <!-- OctagonEightSD Skin v6.5a for Octagon image, by SkinMania -->
   <!-- OctagonEightSD Skin is only for www.octagon-forum.eu -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are NOT allowed to modify and redistribute OctagonEightSD Skin and all graphics -->
@@ -1416,8 +1416,8 @@
     <widget alphatest="blend" position="920,40" render="OE_XPicon" size="100,60" source="Service" transparent="1" zPosition="5">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget name="list" itemHeight="34" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="50,center" size="840,510" zPosition="3" transparent="1" />
-    <widget source="Event" font="Regular; 20" render="OE_RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="white" position="920,135" size="320,542" halign="left" transparent="1" valign="top">
+    <widget name="list" itemHeight="34" setEventItemFont="RegularBold; 20" setColWidths="50,130" setColGap="20" setIconDistance="10" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="50,center" size="840,510" zPosition="3" transparent="1" />
+    <widget source="Event" font="Regular; 20" render="OE_RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="white" position="920,140" size="320,542" halign="left" transparent="1" valign="top">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <!-- Button -->
@@ -1433,7 +1433,7 @@
     <widget name="key_yellow" backgroundColor="OE_Background" foregroundColor="OE_Foreground" font="Regular; 20" halign="left" position="460,645" size="155,25" transparent="1" zPosition="1" />
     <widget name="key_blue" backgroundColor="OE_Background" foregroundColor="OE_Foreground" font="Regular; 20" halign="left" position="650,645" size="155,25" transparent="1" zPosition="1" />
     <!-- Clock -->
-    <panel name="Clock_Blue2" />
+    <panel name="Clock_Blue" />
   </screen>
   <screen name="EPGSelectionMulti" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <!-- Backg -->
@@ -1451,9 +1451,9 @@
     <widget name="next_text" text="NEXT" backgroundColor="OE_Background" font="FHD; 22" foregroundColor="OE_Foreground" halign="center" position="1082,279" size="120,40" transparent="1" />
     <widget name="more_text" text="MORE" backgroundColor="OE_Background" font="FHD; 22" foregroundColor="OE_Foreground" halign="center" position="1082,353" size="120,40" transparent="1" />
     <widget name="date" font="RegularBold; 24" backgroundColor="dark" foregroundColor="OE_Foreground" halign="center" position="1030,455" size="220,40" transparent="1" />
-    <widget name="list" itemHeight="30" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="50,100" size="960,392" zPosition="3" transparent="1" />
-    <eLabel backgroundColor="dark" name="" position="50,495" size="1180,1" zPosition="-9" foregroundColor="white" />
-    <widget source="Event" font="Regular; 20" render="OE_RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="50,498" size="960,130" halign="left" transparent="1" valign="top">
+    <widget name="list" itemHeight="34" font="RegularBold;20" setEventItemFont="RegularBold;20" setEventTimeFont="RegularBold;17" setColWidths="220,100" setColGap="10" setTimeWidth="90" setIconDistance="10" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="50,110" size="960,374" zPosition="3" transparent="1" />
+    <eLabel backgroundColor="dark" name="" position="center,490" size="1180,1" zPosition="-9" foregroundColor="white" />
+    <widget source="Event" font="Regular; 20" render="OE_RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="50,495" size="960,130" halign="left" transparent="1" valign="top">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <!-- Button -->
@@ -3326,6 +3326,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget backgroundColor="Newback" font="FHD; 17" halign="center" position="1078,87" render="Label" size="125,25" source="global.CurrentTime" transparent="1" text="Donnerstag" foregroundColor="white">
       <convert type="ClockToText">Format:%A,</convert>
     </widget>
+  </screen>
+  <screen name="SkinConverter" title="SkinConverter" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="360,center" size="670,350" zPosition="-15" />
+    <eLabel backgroundColor="Newback" foregroundColor="OE_Background" name="" position="1030,center" size="220,720" zPosition="-15" />
+    <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="360,195" size="650,40" zPosition="-11" valign="center" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/skin.png" position="970,185" size="60,60" transparent="1" zPosition="10" />
+    <!-- Widget -->
+    <eLabel text="Skin Converter" position="380,196" size="580,35" font="RegularBold; 24" backgroundColor="dark" foregroundColor="white" transparent="1" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
+    <widget name="text" font="FHD; 22" backgroundColor="OE_Background" foregroundColor="white" position="380,260" size="630,204" transparent="1" halign="center" valign="center" />
+    <!-- Button -->
+    <eLabel backgroundColor="white" name="" position="380,485" size="630,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_green.png" position="380,500" size="25,25" />
+    <ePixmap alphatest="blend" pixmap="OctagonEightSD/buttons/key_red.png" position="670,500" size="25,25" />
+    <widget name="key_green" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="410,500" size="250,25" transparent="1" zPosition="1" />
+    <widget name="key_red" backgroundColor="OE_Background" font="Regular; 20" halign="left" position="700,500" size="200,25" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="Clock_Blue" />
   </screen>
   <screen backgroundColor="OE_Background" flags="wfNoBorder" name="Standby" position="0,0" size="1280,720" title="Standby" />
   <screen name="StreamingClientsInfo" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">

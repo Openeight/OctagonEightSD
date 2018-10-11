@@ -25,6 +25,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="ScNewSelection" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -53,6 +54,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="ScSetupScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -72,6 +74,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="AutoCamListSetup" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -106,6 +109,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="AutoCamServiceSetup" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -129,6 +133,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="ImageBackup" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -154,6 +159,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="FlashOnline" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -179,6 +185,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="doFlashImage" title="Flash On the fly (select a image)" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -202,6 +209,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="DeviceBrowser" title="Please select medium" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -221,6 +229,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="SoftwarePanel" title="OpenEight Update Manager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update3.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -264,6 +273,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="DevicesMountPanel" title="Mount Manager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/hdd2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -303,6 +313,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="DeviceMountPanelConf" title="Setup Mounts" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/hdd2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -328,6 +339,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="fstabViewerScreen" title="fstab-Editor" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/hdd2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -354,6 +366,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="fstabEditorScreen" title="fstab-Editor" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/hdd2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -380,6 +393,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="dirSelectDlg" title="dirSelectDlg" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/hdd2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -401,6 +415,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="AddonsFileBrowser" title="Manual Addon Installer Filebrowser" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -420,6 +435,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="Ipkuninstall" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -434,6 +450,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="QuitMainloopScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1280,720" transparent="0">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/info.png" position="970,210" size="60,60" zPosition="4" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/info2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -445,6 +462,7 @@
     <eLabel text="OctagonEight" font="RegularBold; 24" backgroundColor="dark" foregroundColor="white" position="440,221" size="525,35" transparent="1" valign="center" zPosition="3" />
     <widget name="text" font="RegularBold; 25" backgroundColor="OE_Background" foregroundColor="white" position="440,270" size="570,180" transparent="1" halign="center" valign="center" />
   </screen>
+
   <screen name="Info" title="Panel-Info" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/info3.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -458,6 +476,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="PiPSetup" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1280,720" transparent="0">
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="center,center" size="640,310" zPosition="-15" />
     <eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="center,220" size="640,40" zPosition="-11" valign="center" />
@@ -466,6 +485,7 @@
     <widget name="text" font="FHD; 22" backgroundColor="OE_Background" position="center,270" size="620,238" transparent="1" halign="center" valign="center" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/openeight.png" position="755,218" size="202,45" transparent="1" zPosition="10" />
   </screen>
+
   <screen name="RemoteControlType" title="Configure remote control type" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/remote.png" position="890,40" size="60,60" transparent="1" zPosition="10" />
     <panel name="BackStandart" />
@@ -477,6 +497,7 @@
     <eLabel backgroundColor="white" name="" position="70,635" size="860,2" zPosition="-9" />
     <panel name="S2" />
   </screen>
+
   <screen name="XTDVBNTPTime" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -518,6 +539,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="SundtekControlCenter" title="SundtekControlCenter" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -546,6 +568,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="CronManager" title="CronManager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -578,6 +601,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="SetupCronConf" title="Cron Manager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -597,6 +621,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="ScriptRunner" title="Jop Manager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -621,6 +646,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <screen name="Swap" title="Swap File Manager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/update2.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/menu/setup2.png" position="1050,center" size="180,180" transparent="1" zPosition="10" />
@@ -654,6 +680,7 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
   <!-- YahooWeather -->
   <screen name="YahooWeatherList" title="Yahoo Weather list" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/plugins/yh.png" position="970,40" size="60,60" transparent="1" zPosition="10" />
@@ -673,6 +700,8 @@
     <!-- Clock -->
     <panel name="Clock_Blue" />
   </screen>
+
+
   <screen name="YahooWeather" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <ePixmap alphatest="blend" pixmap="OctagonEightSD/plugins/yh.png" position="580,40" size="60,60" transparent="1" zPosition="10" />
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="50,center" size="590,640" zPosition="-45" />

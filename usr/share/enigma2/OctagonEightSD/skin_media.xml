@@ -21,7 +21,6 @@
     <widget name="key_blue" backgroundColor="OE_Background" foregroundColor="OE_Foreground" font="Regular; 20" halign="left" position="530,645" size="180,25" transparent="1" zPosition="1" />
   </screen>
 
-  
   <screen name="EMCSelection" title="Enhanced Movie Center" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1280,720">
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1000,640" zPosition="-15" />
     <eLabel backgroundColor="Newback" foregroundColor="OE_Background" name="" position="1030,center" size="220,720" zPosition="-15" />
